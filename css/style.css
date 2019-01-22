@@ -4,9 +4,11 @@
 	box-sizing: border-box;
 }
 
+
 .container {
 	width: 930px;
 	margin: 0 auto;
+	background: #e8e8e8;
 }
 
 .clearfix {
@@ -17,3 +19,19 @@
 }
 
 /* header */
+.top {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background: #0000ff;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	box-shadow: 1px 1px 1px 2px #6f6f6f;
+}
+
+.top span {
+	text-transform: lowercase;
+}
