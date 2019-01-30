@@ -45,3 +45,9 @@ header {
 .top span {
 	text-transform: lowercase;
 }
+
+/* templates */
+
+.template_img img {
+	width: 200px;
+}
