@@ -37,6 +37,11 @@ nav {
 	margin-top: 50px;
 }
 
+
+.button_menu {
+	display: none;
+}
+
 .menu {
 	display: block;
 }
@@ -215,3 +220,5 @@ footer {
 	padding: 30px;
 	text-align: center;
 }
+
+
