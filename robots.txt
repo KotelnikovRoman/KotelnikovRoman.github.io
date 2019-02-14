@@ -1,0 +1,5 @@
+#file for poiskovikov
+#obrabativayuzhiy sitemap
+
+Allow: /
+sitemap: https://kotelnikovroman.github.io/sitemap.xml
