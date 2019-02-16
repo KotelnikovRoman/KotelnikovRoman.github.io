@@ -1,7 +1,14 @@
-.effect-bubba_img {
-	height: 225px;
-}
-
-.contact_icon {
-	height: 30px;
-}
+	/*header*/
+	.start span {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+		/*end header*/
+	
+	.effect-bubba_img {
+		height: 225px;
+	}
+	
+	.contact_icon {
+		height: 30px;
+	}
