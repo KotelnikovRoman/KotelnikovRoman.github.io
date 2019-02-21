@@ -12,3 +12,12 @@
 	.contact_icon {
 		height: 30px;
 	}
+
+	.donwload_zip {
+		position: fixed;
+		bottom: 0;
+	}
+
+	.donwload_zip a img {
+		width: 50px;
+	}
