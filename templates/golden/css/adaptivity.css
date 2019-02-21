@@ -6,7 +6,16 @@
 	.left, .right {
 		width: 100%;
 	}
+
+	.works img {
+		width: 33.3%;
+	}
+
+	.works img:nth-child(2) {
+		margin: 0;
+	}
 }
+
 
 @media screen and (max-width: 885px) {
 	.services_item {
@@ -16,14 +25,6 @@
 
 	.services_item:nth-child(2) {
 		margin-left: 0;
-	}
-
-	.works img {
-		width: 33.3%;
-	}
-
-	.works img:nth-child(2) {
-		margin: 0;
 	}
 }
 
