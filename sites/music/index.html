@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="автор сайта Котельников Роман">
+    <meta name="keywords" content="наша музыка">
+    <meta name="description" content="сайт наша музыка, музыка слушать онлайн русские песни слушать подряд">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>наша музыка</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>наша музыка</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="pop.html">поп</a>
+                    </li>
+                    <li>
+                        <a href="rock.html">рок</a>
+                    </li>
+                    <li>
+                        <a href="rep.html">рэп</a>
+                    </li>
+                    <li>
+                        <a href="shanson.html">шансон</a>
+                    </li>
+                    <li>
+                        <a href="retro.html">рэтро</a>
+                    </li>
+                    <li>
+                        <a href="new.html">новые</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>музыка слушать онлайн русские песни</h2>
+            <form onsubmit="return false">
+            <select name="ruki_vverh" id="ruki_vverh">
+                <option value="dobroe_utro">Доброе утро</option>
+                <option value="malish">Малыш</option>
+                <option value="student">Студент</option>
+                <option value="love_story">История любовь</option>
+                <option value="zdravstvuy">Здравствуй</option>
+                <option value="dobroe_utro_mix">Доброе утро (club mix)</option>
+                <option value="bandito">Бандито</option>
+                <option value="dvigay_telom">Двигай телом (radio edit)</option>
+                <option value="love_story_mix">love story (club mix)</option>
+                <option value="posledniy_poceluy">Последний поцелуй</option>
+            </select>
+            <input type="submit" onclick="ansver()">
+            </form>
+            <iframe frameborder="0" id="pop_music" src="https://music.yandex.ru/iframe/#track/26525262/3157855/">
+                <a href='https://music.yandex.ru/album/3157855/track/26525262'>Доброе утро</a>
+                <a href='https://music.yandex.ru/artist/161247'>Руки Вверх!</a>
+            </iframe>
+        </div>
+    </main>
+    <footer>
+        <button onclick="chet()">chet</button>
+    </footer>
+    <script src="js/music_ruki_vverh.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
