@@ -1,15 +1,9 @@
-music = new Array(
-    "https://music.yandex.ru/iframe/#track/3599234/389916/",    //ruki vverh
-)
-pop = document.getElementById('pop_music');
-//pop.src = music[0];
+kaseta = document.getElementById('kaseta');
 
-var i = 0;
-
-pop.onclick = function() {
-    i += 1;
+function play() {
+    kaseta.src = 'img/77582_2.gif';
 }
 
-function chet() {
-    alert(i);
+function pause() {
+    kaseta.src = 'img/77582_2.jpg';
 }

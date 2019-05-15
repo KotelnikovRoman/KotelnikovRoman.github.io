@@ -10,6 +10,7 @@
     <meta name="robots" content="all">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <!--скрипт для каждого салиста должен быть вверху-->
     <title>наша музыка</title>
 </head>
 <body>
@@ -40,38 +41,84 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        </div><!--end container-->
     </header>
     <main>
-        <div class="container">
-            <h2>музыка слушать онлайн русские песни</h2>
-            <form onsubmit="return false">
-            <select name="ruki_vverh" id="ruki_vverh">
-                <option value="dobroe_utro">Доброе утро</option>
-                <option value="malish">Малыш</option>
-                <option value="student">Студент</option>
-                <option value="love_story">История любовь</option>
-                <option value="zdravstvuy">Здравствуй</option>
-                <option value="dobroe_utro_mix">Доброе утро (club mix)</option>
-                <option value="bandito">Бандито</option>
-                <option value="dvigay_telom">Двигай телом (radio edit)</option>
-                <option value="love_story_mix">love story (club mix)</option>
-                <option value="posledniy_poceluy">Последний поцелуй</option>
-            </select>
-            <input type="submit" onclick="ansver()">
-            </form>
-            <iframe frameborder="0" id="pop_music" src="https://music.yandex.ru/iframe/#track/26525262/3157855/">
-                <a href='https://music.yandex.ru/album/3157855/track/26525262'>Доброе утро</a>
-                <a href='https://music.yandex.ru/artist/161247'>Руки Вверх!</a>
-            </iframe>
-        </div>
+        <div class="container flex">
+            <section class="artist_music">
+                <h2>руки вверх</h2>
+                <h3>дышите равномерно</h3>
+                <img src="img/77582_2.jpg" alt="" id="kaseta"><br>
+                <button onclick="play()">вкл</button>
+                <button onclick="pause()">выкл</button>
+                <button onclick="pause()">пауза</button>
+                <button onclick="play()">след</button>
+                <button onclick="play()">пред</button>
+                <form onsubmit="return false">
+                    <!--alboms-->
+                    <select class="select_list" id="artist_alboms" onchange="vibor(this)">
+                        <option value="dishite">дышите равномерно</option>
+                        <option value="sdelay_1">сделай погромче!</option>
+                        <option value="sdelay_2">сделай ещё погромче!</option>
+                        <option value="bez_tormozov_1">без тормозов</option>
+                        <option value="bez_tormozov_2">совсем без тормозов</option>
+                    </select>
+                    <!--end alboms-->
+                    <!--list-->
+                    <select class="select_list" id="artist_dishite" style="display: none">
+                        <option value="dobroe_utro">Доброе утро</option>
+                        <option value="malish">Малыш</option>
+                        <option value="student">Студент</option>
+                        <option value="love_story">История любовь</option>
+                        <option value="zdravstvuy">Здравствуй</option>
+                        <option value="dobroe_utro_mix">Доброе утро (club mix)</option>
+                        <option value="bandito">Бандито</option>
+                        <option value="dvigay_telom">Двигай телом (radio edit)</option>
+                        <option value="love_story_mix">love story (club mix)</option>
+                        <option value="posledniy_poceluy">Последний поцелуй</option>
+                    </select>
+                    <select class="select_list" id="artist_sdelay_1" style="display: none">
+                            <option value="intro">intro</option>
+                            <option value="kroshka moya">крошка моя</option>
+                            <option value="chuzhie gubi">чужие губы</option>
+                            <option value="lish o tebe mechtaya">лишь о тебе мечтая</option>
+                            <option value="ya tebya ukradu">я тебя украду</option>
+                            <option value="budte zdorovi">будьте здоровы</option>
+                            <option value="devchenka">девчёнка</option>
+                            <option value="maugli">маугли</option>
+                            <option value="pesenka">песенка</option>
+                            <option value="dzhimi">джими</option>
+                            <option value="vernis">вернись</option>
+                            <option value="ne zabudu tebya nikogda">не забуду тебя никогда</option>
+                        </select>
+                        <!--end list-->
+                    <input type="submit" onclick="ansver()" value="выбрать">
+                </form>
+                <iframe frameborder="0" id="pop_music" src="https://music.yandex.ru/iframe/#track/26525262/3157855/">
+                    <a href='https://music.yandex.ru/album/3157855/track/26525262'>Доброе утро</a>
+                    <a href='https://music.yandex.ru/artist/161247'>Руки Вверх!</a>
+                </iframe>
+            </section><!-- end artist_music -->
+            <article class="artist_info">
+                <!--<img src="img/ruki_vverh.jpg" alt="">
+                <img src="img/ruki_vverh2.jpg" alt="">
+                <img src="img/ruki_vverh3.jpg" alt="">-->
+                <figure>
+                    <img src="img/ruki_vverh4.jpg" alt="">
+                    <figcaption>
+                        руки вверх
+                    </figcaption>
+                </figure>
+            </article>
+            <!-- /.artist_info -->
+        </div><!-- end container-->
     </main>
     <footer>
-        <button onclick="chet()">chet</button>
-    </footer>
-    <script src="js/music_ruki_vverh.js"></script>
-    <script>
         
-    </script>
+    </footer>
+    <!--основной скрипт для всех страниц-->
+    <script src="js/jquery3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/music_ruki_vverh.js"></script>
 </body>
 </html>

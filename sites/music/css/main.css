@@ -4,13 +4,115 @@ body {
     background: black;
 }
 
+h1 {
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 1px 1px 3px #ccc;
+}
+
+select {
+    padding: 5px;
+    text-align: center;
+}
+select, input {
+    width: 300px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/******************** header ******************/
+
+.logo {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    width: 55%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    /*background: yellow;*/
+}
+
+nav ul li {
+    padding: 5px 15px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+/************ main ***********/
+.container.flex {
+    display: flex;
+}
+.artist_music {
+    flex: 1;
+    width: 300px;
+    text-align: center;
+    /*background: green;*/
+}
+
+.select_list {
+    float: right;
+    width: 300px;
+    height: 40px;
+    margin-right: 10px;
+    line-height: 40px;
+}
+
+.artist_music img {
+    width: 300px;
+}
+
 #pop_music {
     border:none;
     width:300px;
     height:100px;
 }
 
-audio {
-    width: 250px;
-    height: 30px;
+.artist_info {
+    flex: 2;
+    /*width: 650px;*/
+    height: 650px;
+    padding: 0;
+    /*background: yellow;*/
 }
+
+.artist_info img {
+    width: 98%;
+    border: 5px solid #fff;
+}
+
+figure {
+    background: #fff;
+}
+figcaption {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: #191b18;
+    background: #fff;
+}
+
+/*********** footer ****************/
