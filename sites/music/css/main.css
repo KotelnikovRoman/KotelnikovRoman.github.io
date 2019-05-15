@@ -96,7 +96,7 @@ nav ul li a {
     /*background: yellow;*/
 }
 
-.artist_info img {
+.artist_info figure img {
     width: 98%;
     border: 5px solid #fff;
 }
