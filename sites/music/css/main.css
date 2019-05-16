@@ -40,6 +40,16 @@ a {
 
 /******************** header ******************/
 
+.beta {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.beta img {
+    height: 200px;
+}
+
 .logo {
     width: 100%;
 }
@@ -99,6 +109,7 @@ nav ul li a {
     height:100px;
 }
 
+
 .artist_info {
     flex: 2;
     /*width: 650px;*/
@@ -107,6 +118,9 @@ nav ul li a {
     /*background: yellow;*/
 }
 
+.artist_info figure {
+    width: 100%;
+}
 .artist_info figure img {
     width: 98%;
     border: 5px solid #fff;
@@ -132,12 +146,3 @@ img#uroven {
 
 /*********** footer ****************/
 
-.beta {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.beta img {
-    height: 200px;
-}

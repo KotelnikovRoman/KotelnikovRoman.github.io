@@ -1,12 +1,15 @@
 kaseta = document.getElementById('kaseta');
 uroven = document.getElementById('uroven');
 
-function play() {
-    kaseta.src = 'img/77582_2.gif';
+function play_effect() {
+    kaseta.src = 'img/kaseta.gif';
     uroven.src = 'img/uroven.gif';
 }
 
-function pause() {
-    kaseta.src = 'img/77582_2.jpg';
+function stop_effect() {
+    kaseta.src = 'img/kaseta.jpg';
     uroven.src = 'img/uroven.jpg';
 }
+
+
+//document.getElementById('play_but').onclick = pro();

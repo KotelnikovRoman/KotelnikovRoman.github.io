@@ -79,7 +79,36 @@ albom_5 = new Array(
     'https://music.yandex.ru/iframe/#track/36016750/389914/'   //ruki vverh
 );
 
+//здравствуй это я
+albom_6 = new Array(
+    'https://music.yandex.ru/iframe/#track/36016795/4517953/',  //ay-yay-yay
+    'https://music.yandex.ru/iframe/#track/36016798/4517953/',  //on ne love tebya
+    'https://music.yandex.ru/iframe/#track/36016800/4517953/',  //kiska-love
+    'https://music.yandex.ru/iframe/#track/36016803/4517953/',  //prosti
+    'https://music.yandex.ru/iframe/#track/36016804/4517953/',  //I like
+    'https://music.yandex.ru/iframe/#track/36016805/4517953/',  //ne zovi menya krasivoyu
+    'https://music.yandex.ru/iframe/#track/36016806/4517953/',  //paren
+    'https://music.yandex.ru/iframe/#track/36016807/4517953/',  //bayu-bay
+    'https://music.yandex.ru/iframe/#track/36016809/4517953/',  //tak tebe i nado
+    'https://music.yandex.ru/iframe/#track/36016810/4517953/',  //pesenka nomer 3
+    'https://music.yandex.ru/iframe/#track/36016811/4517953/',  //zdravstvuy eto ya
+    'https://music.yandex.ru/iframe/#track/36016813/4517953/',  //Aleshka
+);
+
 music = document.getElementById('pop_music');
+artist_alboms = document.getElementById('artist_alboms');
+
+function play_button() {
+    value = artist_alboms.value;
+    if(value == 'artist_albom_1'){
+        len = albom_1.length;
+        for(var i=0; i<len; i++){
+            music.src = albom_1[i];
+            music.play();
+            i++;
+        }
+    }
+}
 
 function vibor(e) {
     //var artist_albom = document.getElementById('artist_alboms');
@@ -90,6 +119,7 @@ function vibor(e) {
         document.getElementById('artist_list_3').style = 'display: none';
         document.getElementById('artist_list_4').style = 'display: none';
         document.getElementById('artist_list_5').style = 'display: none';
+        document.getElementById('artist_list_6').style = 'display: none';
     }
     else if(albom == 'artist_albom_2') {
         document.getElementById('artist_list_1').style = 'display: none';
@@ -97,6 +127,7 @@ function vibor(e) {
         document.getElementById('artist_list_3').style = 'display: none';
         document.getElementById('artist_list_4').style = 'display: none';
         document.getElementById('artist_list_5').style = 'display: none';
+        document.getElementById('artist_list_6').style = 'display: none';
     }
     else if(albom == 'artist_albom_3') {
         document.getElementById('artist_list_1').style = 'display: none';
@@ -104,6 +135,7 @@ function vibor(e) {
         document.getElementById('artist_list_3').style = 'display: block';
         document.getElementById('artist_list_4').style = 'display: none';
         document.getElementById('artist_list_5').style = 'display: none';
+        document.getElementById('artist_list_6').style = 'display: none';
     }
     else if(albom == 'artist_albom_4') {
         document.getElementById('artist_list_1').style = 'display: none';
@@ -111,6 +143,7 @@ function vibor(e) {
         document.getElementById('artist_list_3').style = 'display: none';
         document.getElementById('artist_list_4').style = 'display: block';
         document.getElementById('artist_list_5').style = 'display: none';
+        document.getElementById('artist_list_6').style = 'display: none';
     }
     else if(albom == 'artist_albom_5') {
         document.getElementById('artist_list_1').style = 'display: none';
@@ -118,6 +151,15 @@ function vibor(e) {
         document.getElementById('artist_list_3').style = 'display: none';
         document.getElementById('artist_list_4').style = 'display: none';
         document.getElementById('artist_list_5').style = 'display: block';
+        document.getElementById('artist_list_6').style = 'display: none';
+    }
+    else if(albom == 'artist_albom_6') {
+        document.getElementById('artist_list_1').style = 'display: none';
+        document.getElementById('artist_list_2').style = 'display: none';
+        document.getElementById('artist_list_3').style = 'display: none';
+        document.getElementById('artist_list_4').style = 'display: none';
+        document.getElementById('artist_list_5').style = 'display: none';
+        document.getElementById('artist_list_6').style = 'display: block';
     }
 }
 
@@ -317,7 +359,44 @@ function play_list(e) {
         music.src = albom_5[15];
     }
 
-    play();
+    //albom 6
+    else if(list == 'list_6.1') {
+        music.src = albom_6[0];
+    }
+    else if(list == 'list_6.2') {
+        music.src = albom_6[1];
+    }
+    else if(list == 'list_6.3') {
+        music.src = albom_6[2];
+    }
+    else if(list == 'list_6.4') {
+        music.src = albom_6[3];
+    }
+    else if(list == 'list_6.5') {
+        music.src = albom_6[4];
+    }
+    else if(list == 'list_6.6') {
+        music.src = albom_6[5];
+    }
+    else if(list == 'list_6.7') {
+        music.src = albom_6[6];
+    }
+    else if(list == 'list_6.8') {
+        music.src = albom_6[7];
+    }
+    else if(list == 'list_6.9') {
+        music.src = albom_6[8];
+    }
+    else if(list == 'list_6.10') {
+        music.src = albom_6[9];
+    }
+    else if(list == 'list_6.11') {
+        music.src = albom_6[10];
+    }
+    else if(list == 'list_6.12') {
+        music.src = albom_6[11];
+    }
+    play_effect();
 }
 
 /*function ansver() {

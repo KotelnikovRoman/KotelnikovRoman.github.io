@@ -9,11 +9,15 @@
     <meta name="description" content="сайт наша музыка, музыка слушать онлайн русские песни слушать подряд">
     <meta name="robots" content="all">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/iphone.css">
     <!--скрипт для каждого салиста должен быть вверху-->
     <title>наша музыка</title>
 </head>
 <body>
     <header>
+            <div class="beta">
+                <img src="img/error.png" alt="">
+            </div>
         <div class="container">
             <div class="logo">
                 <h1>наша музыка</h1>
@@ -46,9 +50,10 @@
         <div class="container flex">
             <section class="artist_music">
                 <h2>руки вверх</h2>
-                <img src="img/77582_2.jpg" alt="" id="kaseta"><br>
+                <img src="img/kaseta.jpg" alt="" id="kaseta"><br>
                 <img src="img/uroven.jpg" alt="" id="uroven">
-                <button onclick="play()">вкл</button>
+                <br>
+                <button onclick="play_effect()">вкл</button>
                 <button onclick="pause()">выкл</button>
                 <button onclick="pause()">пауза</button>
                 <button onclick="play()">след</button>
@@ -62,6 +67,7 @@
                         <option value="artist_albom_3">сделай ещё погромче!</option>
                         <option value="artist_albom_4">без тормозов</option>
                         <option value="artist_albom_5">совсем без тормозов</option>
+                        <option value="artist_albom_6">здравствуй это я</option>
                     </select>
                     <!--end alboms-->
                     <!--list-->
@@ -137,6 +143,20 @@
                         <option value="list_5.15">hands up mix</option>
                         <option value="list_5.16">руки вверх</option>
                     </select>
+                    <select class="select_list" id="artist_list_6" style="display: none" onchange="play_list(this)">
+                            <option value="list_6.1">ай-яй-яй</option>
+                            <option value="list_6.2">он не любит тебя</option>
+                            <option value="list_6.3">киска-любовь</option>
+                            <option value="list_6.4">прости</option>
+                            <option value="list_6.5">I Like</option>
+                            <option value="list_6.6">не зови меня красивой</option>
+                            <option value="list_6.7">парень</option>
+                            <option value="list_6.8">баю-бай</option>
+                            <option value="list_6.9">так тебе и надо</option>
+                            <option value="list_6.10">песенка № 3</option>
+                            <option value="list_6.11">здравствуй это я</option>
+                            <option value="list_6.12">Алёшка</option>
+                        </select>
                     <!--end list-->
                     <input type="submit" onclick="ansver()" value="выбрать">
                 </form>
@@ -155,14 +175,17 @@
                         руки вверх
                     </figcaption>
                 </figure>
+                <aside>
+                    <h2>руки вверх альбомы</h2>
+                </aside>
             </article>
             <!-- /.artist_info -->
         </div><!-- end container-->
     </main>
     <footer>
-        <div class="beta">
-            <img src="img/error1.png" alt="">
-        </div>
+        <!--<div class="beta">
+            <img src="img/error.png" alt="">
+        </div>-->
     </footer>
     <!--основной скрипт для всех страниц-->
     <script src="js/jquery3.js"></script>

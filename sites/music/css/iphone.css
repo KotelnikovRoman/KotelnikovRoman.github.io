@@ -1,0 +1,93 @@
+@media screen and (max-width: 980px) {
+    /*.beta {
+        display: none;
+    }*/
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /******* header *******/
+    
+    /******* main *********/
+    /*.artist_music {
+        background: green;
+    }
+    .artist_info {
+        background: yellow;
+    }*/
+    .select_list {
+        float: none;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    /********** header **********/
+    nav ul {
+        width: 60%;
+    }
+    /********** main **********/
+    /********** footer **********/
+}
+
+@media screen and (max-width: 870px) {
+    /********** header **********/
+    nav ul {
+        width: 70%;
+    }
+    /********** main **********/
+    /********** footer **********/
+}
+
+@media screen and (max-width: 685px) {
+    /********** header **********/
+    nav ul {
+        width: 75%;
+    }
+    /********** main **********/
+    /********** footer **********/
+}
+
+@media screen and (max-width: 547px) {
+    .container.flex {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    /********** header **********/
+    nav ul {
+        width: 100%;
+    }
+    /********** main **********/
+    .artist_music {
+        width: 100%;
+    }
+
+    .select_list {
+        /*float: none;*/
+        margin: 0;
+    }
+    .artist_info {
+        width: 100%;
+    }
+    /********** footer **********/
+}
+
+@media screen and (max-width: 479px) {
+    /********** header **********/
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    /********** main **********/
+    /********** footer **********/
+}
