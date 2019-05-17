@@ -1,3 +1,11 @@
+music = document.getElementById('music');
+music_albom = document.getElementById('music_albom');
+//for smeni alboma
+var last_index;
+artist_alboms = document.getElementById('artist_alboms');
+
+//чёрный фон
+b = 'black/';
 kaseta = document.getElementById('kaseta');
 uroven = document.getElementById('uroven');
 

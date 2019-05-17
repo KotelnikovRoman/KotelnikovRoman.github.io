@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="автор сайта Котельников Роман">
-    <meta name="keywords" content="наша музыка">
+    <meta name="keywords" content="наша музыка, руки вверх, руки вверх слушать, руки вверх бесплатно, руки вверх 2019, она меня целует руки вверх, руки вверх все песни, руки вверх онлайн, руки вверх слушать онлайн, руки вверх слушать бесплатно, руки вверх онлайн бесплатно, руки вверх слушать онлайн бесплатно, гордость руки вверх, руки вверх к черту, руки вверх новое, руки вверх к черту эту гордость, слушать руки вверх все песни, группа руки вверх, руки вверх новая песня, музыка руки вверх, руки вверх все песни бесплатно, песни руки вверх слушать бесплатно, руки вверх песни онлайн, руки вверх +все песни слушать онлайн, руки вверх лучшие песни, руки вверх альбомы, руки вверх девчонка">
     <meta name="description" content="сайт наша музыка, музыка слушать онлайн русские песни слушать подряд">
     <meta name="robots" content="all">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/iphone.css">
+    <!--<script src="https://music.yandex.ru/api/audio/dist/index.js"></script>-->
+    <!--обфусцированный код (защищённый)-->
+    <!--<script src="https://music.yandex.ru/api/audio/dist/index.min.js"></script>-->
+    <!-- Чтобы в режиме отладки был представлен не обфусцированный код (не защищёный, для отладки)-->
+    <!--<script src="https://music.yandex.ru/api/audio/dist/index.map.json"></script>-->
     <!--скрипт для каждого салиста должен быть вверху-->
     <title>наша музыка</title>
 </head>
-<body>
+<body  onload="yaMusic()">
     <header>
             <div class="beta">
                 <img src="img/error.png" alt="">
@@ -52,13 +57,13 @@
                 <h2>руки вверх</h2>
                 <img src="img/kaseta.jpg" alt="" id="kaseta"><br>
                 <img src="img/uroven.jpg" alt="" id="uroven">
-                <br>
-                <button onclick="play_effect()">вкл</button>
-                <button onclick="pause()">выкл</button>
-                <button onclick="pause()">пауза</button>
-                <button onclick="play()">след</button>
-                <button onclick="play()">пред</button>
-                <form onsubmit="return false" class="artist_setting">
+                <!--<br>
+                <button onclick="play_effect()" id="play_player">вкл</button>
+                <button onclick="stop_effect()">выкл</button>
+                <button onclick="stop_effect()">пауза</button>
+                <button onclick="play_effect()">след</button>
+                <button onclick="play_effect()">пред</button>
+                <form onsubmit="return false" class="artist_setting">-->
                     <!--alboms-->
                     <h3>Альбомы</h3>
                     <select class="select_list" id="artist_alboms" onchange="vibor(this)" autofocus>
@@ -68,6 +73,12 @@
                         <option value="artist_albom_4">без тормозов</option>
                         <option value="artist_albom_5">совсем без тормозов</option>
                         <option value="artist_albom_6">здравствуй это я</option>
+                        <option value="artist_albom_7">маленькие девочки</option>
+                        <option value="artist_albom_8">огонь</option>
+                        <option value="artist_albom_9">не бойся я с тобой</option>
+                        <option value="artist_albom_10">конец попсе, танцуют все</option>
+                        <option value="artist_albom_11">мне с тобою хорошо</option>
+                        <option value="artist_albom_12">Fuc*in' Rock'n'Roll</option>
                     </select>
                     <!--end alboms-->
                     <!--list-->
@@ -157,13 +168,101 @@
                             <option value="list_6.11">здравствуй это я</option>
                             <option value="list_6.12">Алёшка</option>
                         </select>
+                        <select class="select_list" id="artist_list_7" style="display: none" onchange="play_list(this)">
+                            <option value="list_7.1">маленькие девочки</option>
+                            <option value="list_7.2">18 мне уже</option>
+                            <option value="list_7.3">Серёга (dance mix)</option>
+                            <option value="list_7.4">sugarbaby</option>
+                            <option value="list_7.5">ай-яй-яй</option>
+                            <option value="list_7.6">доброй, нежной, ласковой</option>
+                            <option value="list_7.7">здравствуй это я</option>
+                            <option value="list_7.8">выбирай сама</option>
+                            <option value="list_7.9">Алёшка</option>
+                            <option value="list_7.10">не бойся я с тобой</option>
+                            <option value="list_7.11">только для тебя (Руки вверх и Оксана Почепа)</option>
+                            <option value="list_7.12">Ivan Crazy Driver</option>
+                            <option value="list_7.13">баю-бай</option>
+                            <option value="list_7.14">так тебе и надо</option>
+                        </select>
+                        <select class="select_list" id="artist_list_8" style="display: none" onchange="play_list(this)">
+                            <option value="list_8.1">вдох</option>
+                            <option value="list_8.2">энергия нового поколения</option>
+                            <option value="list_8.3">dj</option>
+                            <option value="list_8.4">огонь</option>
+                            <option value="list_8.5">песенка 5</option>
+                            <option value="list_8.6">хороший день</option>
+                            <option value="list_8.7">я не хочу тебя терять</option>
+                            <option value="list_8.8">ты осталась одна</option>
+                            <option value="list_8.9">мегаполис</option>
+                            <option value="list_8.10">искуственное дыхание</option>
+                            <option value="list_8.11">спортлото2002</option>
+                        </select>
+                        <select class="select_list" id="artist_list_9" style="display: none" onchange="play_list(this)">
+                            <option value="list_9.1">18 мне уже</option>
+                            <option value="list_9.2">молодой, красивый</option>
+                            <option value="list_9.3">выбирай сама</option>
+                            <option value="list_9.4">Серёжа (dance mix)</option>
+                            <option value="list_9.5">доброй, нежной, ласковой</option>
+                            <option value="list_9.6">он не я</option>
+                            <option value="list_9.7">только для тебя (руки вверх и Оксана Почепа)</option>
+                            <option value="list_9.8">думала</option>
+                            <option value="list_9.9">песенка 4</option>
+                            <option value="list_9.10">не бойся я с тобой</option>
+                            <option value="list_9.11">no pop</option>
+                            <option value="list_9.12">Серёжка (pop mix)</option>
+                            <option value="list_9.13">у реки девчонка</option>
+                        </select>
+                        <select class="select_list" id="artist_list_10" style="display: none" onchange="play_list(this)">
+                            <option value="list_10.1">стоят подружки</option>
+                            <option value="list_10.2">он тебя целует</option>
+                            <option value="list_10.3">танцуют все</option>
+                            <option value="list_10.4">замужем</option>
+                            <option value="list_10.5">девушки востока</option>
+                            <option value="list_10.6">уходи</option>
+                            <option value="list_10.7">выпускной</option>
+                            <option value="list_10.8">не телефонный разговор</option>
+                            <option value="list_10.9">песенка 5</option>
+                            <option value="list_10.10">половинка любви</option>
+                            <option value="list_10.11">маленькие девочки</option>
+                        </select>
+                        <select class="select_list" id="artist_list_11" style="display: none" onchange="play_list(this)">
+                            <option value="list_11.1">милая</option>
+                            <option value="list_11.2">сделать тебя взрослой</option>
+                            <option value="list_11.3">детская</option>
+                            <option value="list_11.4">я буду ждать</option>
+                            <option value="list_11.5">набираю номер</option>
+                            <option value="list_11.6">убегай</option>
+                            <option value="list_11.7">песенка 6</option>
+                            <option value="list_11.8">Yalla (club mix)</option>
+                            <option value="list_11.9">не забуду</option>
+                            <option value="list_11.10">мне с тобой хорошо</option>
+                        </select>
+                        <select class="select_list" id="artist_list_12" style="display: none" onchange="play_list(this)">
+                            <option value="list_12.1">Наташа</option>
+                            <option value="list_12.2">fucin rock'n'roll</option>
+                            <option value="list_12.3">эни-бени</option>
+                            <option value="list_12.4">отель</option>
+                            <option value="list_12.5">прошу не молчи</option>
+                            <option value="list_12.6">больно</option>
+                            <option value="list_12.7">институтка</option>
+                            <option value="list_12.8">девочки колхозницы</option>
+                            <option value="list_12.9">Shake your Tailfeather</option>
+                            <option value="list_12.10">расстались</option>
+                            <option value="list_12.11">лето в стили Samba</option>
+                            <option value="list_12.12">Наташа (European dance mix)</option>
+                        </select>
                     <!--end list-->
                     <input type="submit" onclick="ansver()" value="выбрать">
                 </form>
-                <iframe frameborder="0" id="pop_music" src="https://music.yandex.ru/iframe/#track/26525262/3157855/">
+                <!--pesnya-->
+                <iframe frameborder="0" id="music" src="https://music.yandex.ru/iframe/#track/26525262/3157855/black/">
                     <a href='https://music.yandex.ru/album/3157855/track/26525262'>Доброе утро</a>
                     <a href='https://music.yandex.ru/artist/161247'>Руки Вверх!</a>
                 </iframe>
+                <!--albom-->
+                <iframe frameborder="0" id="music_albom" src="https://music.yandex.ru/iframe/#album/3157855/hide/title/black/">
+                    <a href='https://music.yandex.ru/album/3157855'>Дышите равномерно</a>
+                    <a href='https://music.yandex.ru/artist/161247'>Руки Вверх!</a> на Яндекс.Музыке</iframe>
             </section><!-- end artist_music -->
             <article class="artist_info">
                 <!--<img src="img/ruki_vverh.jpg" alt="">
@@ -172,7 +271,7 @@
                 <figure>
                     <img src="img/ruki_vverh4.jpg" alt="">
                     <figcaption>
-                        руки вверх
+                        руки вверх фото
                     </figcaption>
                 </figure>
                 <aside>
