@@ -1,5 +1,7 @@
 music = document.getElementById('music');
 music_albom = document.getElementById('music_albom');
+slide = document.getElementById('slide');
+
 //for smeni alboma
 var last_index;
 artist_alboms = document.getElementById('artist_alboms');
@@ -18,6 +20,8 @@ function stop_effect() {
     kaseta.src = 'img/kaseta.jpg';
     uroven.src = 'img/uroven.jpg';
 }
+
+
 
 
 //document.getElementById('play_but').onclick = pro();
