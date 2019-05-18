@@ -307,24 +307,9 @@ function slideShow() {
         i = 0;
     }
 }
-
-/*music = document.getElementById('pop_music');
-artist_alboms = document.getElementById('artist_alboms');*/
-
-/*function play_button() {
-    value = artist_alboms.value;
-    if(value == 'artist_albom_1'){
-        len = albom_1.length;
-        for(var i=0; i<len; i++){
-            music.src = albom_1[i];
-            music.play();
-            i++;
-        }
-    }
-}*/
+setSlide();
 
 function vibor(e) {
-    //var artist_albom = document.getElementById('artist_alboms');
     var albom = e.value;
     if(albom == 'artist_albom_1') {
         document.getElementById('artist_list_1').style = 'display: block';
@@ -342,17 +327,6 @@ function vibor(e) {
         document.getElementById('artist_list_13').style = 'display: none';
         document.getElementById('artist_list_14').style = 'display: none';
         document.getElementById('artist_list_15').style = 'display: none';
-       /* document.getElementById('artist_list_3').style = 'display: none';
-        document.getElementById('artist_list_4').style = 'display: none';
-        document.getElementById('artist_list_5').style = 'display: none';
-        document.getElementById('artist_list_6').style = 'display: none';
-        document.getElementById('artist_list_1').style = 'display: block';
-        document.getElementById('artist_list_2').style = 'display: none';
-        document.getElementById('artist_list_3').style = 'display: none';
-        document.getElementById('artist_list_4').style = 'display: none';
-        document.getElementById('artist_list_5').style = 'display: none';
-        document.getElementById('artist_list_6').style = 'display: none';
-        */
        //показать первую песню в альбоме плееа
        music.src = albom_1[0];
        //ссылка на весь альбом
@@ -361,7 +335,7 @@ function vibor(e) {
     }
     else if(albom == 'artist_albom_2') {
         document.getElementById('artist_list_1').style = 'display: none';
-        document.getElementById('artist_list_2').style = 'display: block';
+        document.getElementById('artist_list_2').style = 'display: inline-block';
         document.getElementById('artist_list_3').style = 'display: none';
         document.getElementById('artist_list_4').style = 'display: none';
         document.getElementById('artist_list_5').style = 'display: none';
@@ -382,7 +356,7 @@ function vibor(e) {
     else if(albom == 'artist_albom_3') {
         document.getElementById('artist_list_1').style = 'display: none';
         document.getElementById('artist_list_2').style = 'display: none';
-        document.getElementById('artist_list_3').style = 'display: block';
+        document.getElementById('artist_list_3').style = 'display: inline-block';
         document.getElementById('artist_list_4').style = 'display: none';
         document.getElementById('artist_list_5').style = 'display: none';
         document.getElementById('artist_list_6').style = 'display: none';
@@ -403,7 +377,7 @@ function vibor(e) {
         document.getElementById('artist_list_1').style = 'display: none';
         document.getElementById('artist_list_2').style = 'display: none';
         document.getElementById('artist_list_3').style = 'display: none';
-        document.getElementById('artist_list_4').style = 'display: block';
+        document.getElementById('artist_list_4').style = 'display: inline-block';
         document.getElementById('artist_list_5').style = 'display: none';
         document.getElementById('artist_list_6').style = 'display: none';
         document.getElementById('artist_list_7').style = 'display: none';
@@ -424,7 +398,7 @@ function vibor(e) {
         document.getElementById('artist_list_2').style = 'display: none';
         document.getElementById('artist_list_3').style = 'display: none';
         document.getElementById('artist_list_4').style = 'display: none';
-        document.getElementById('artist_list_5').style = 'display: block';
+        document.getElementById('artist_list_5').style = 'display: inline-block';
         document.getElementById('artist_list_6').style = 'display: none';
         document.getElementById('artist_list_7').style = 'display: none';
         document.getElementById('artist_list_8').style = 'display: none';
@@ -445,7 +419,7 @@ function vibor(e) {
         document.getElementById('artist_list_3').style = 'display: none';
         document.getElementById('artist_list_4').style = 'display: none';
         document.getElementById('artist_list_5').style = 'display: none';
-        document.getElementById('artist_list_6').style = 'display: block';
+        document.getElementById('artist_list_6').style = 'display: inline-block';
         document.getElementById('artist_list_7').style = 'display: none';
         document.getElementById('artist_list_8').style = 'display: none';
         document.getElementById('artist_list_9').style = 'display: none';
@@ -466,7 +440,7 @@ function vibor(e) {
         document.getElementById('artist_list_4').style = 'display: none';
         document.getElementById('artist_list_5').style = 'display: none';
         document.getElementById('artist_list_6').style = 'display: none';
-        document.getElementById('artist_list_7').style = 'display: block';
+        document.getElementById('artist_list_7').style = 'display: inline-block';
         document.getElementById('artist_list_8').style = 'display: none';
         document.getElementById('artist_list_9').style = 'display: none';
         document.getElementById('artist_list_10').style = 'display: none';
@@ -487,7 +461,7 @@ function vibor(e) {
         document.getElementById('artist_list_5').style = 'display: none';
         document.getElementById('artist_list_6').style = 'display: none';
         document.getElementById('artist_list_7').style = 'display: none';
-        document.getElementById('artist_list_8').style = 'display: block';
+        document.getElementById('artist_list_8').style = 'display: inline-block';
         document.getElementById('artist_list_9').style = 'display: none';
         document.getElementById('artist_list_10').style = 'display: none';
         document.getElementById('artist_list_11').style = 'display: none';
@@ -508,7 +482,7 @@ function vibor(e) {
         document.getElementById('artist_list_6').style = 'display: none';
         document.getElementById('artist_list_7').style = 'display: none';
         document.getElementById('artist_list_8').style = 'display: none';
-        document.getElementById('artist_list_9').style = 'display: block';
+        document.getElementById('artist_list_9').style = 'display: inline-block';
         document.getElementById('artist_list_10').style = 'display: none';
         document.getElementById('artist_list_11').style = 'display: none';
         document.getElementById('artist_list_12').style = 'display: none';
@@ -529,7 +503,7 @@ function vibor(e) {
         document.getElementById('artist_list_7').style = 'display: none';
         document.getElementById('artist_list_8').style = 'display: none';
         document.getElementById('artist_list_9').style = 'display: none';
-        document.getElementById('artist_list_10').style = 'display: block';
+        document.getElementById('artist_list_10').style = 'display: inline-block';
         document.getElementById('artist_list_11').style = 'display: none';
         document.getElementById('artist_list_12').style = 'display: none';
         document.getElementById('artist_list_13').style = 'display: none';
@@ -550,7 +524,7 @@ function vibor(e) {
         document.getElementById('artist_list_8').style = 'display: none';
         document.getElementById('artist_list_9').style = 'display: none';
         document.getElementById('artist_list_10').style = 'display: none';
-        document.getElementById('artist_list_11').style = 'display: block';
+        document.getElementById('artist_list_11').style = 'display: inline-block';
         document.getElementById('artist_list_12').style = 'display: none';
         document.getElementById('artist_list_13').style = 'display: none';
         document.getElementById('artist_list_14').style = 'display: none';
@@ -571,7 +545,7 @@ function vibor(e) {
         document.getElementById('artist_list_9').style = 'display: none';
         document.getElementById('artist_list_10').style = 'display: none';
         document.getElementById('artist_list_11').style = 'display: none';
-        document.getElementById('artist_list_12').style = 'display: block';
+        document.getElementById('artist_list_12').style = 'display: inline-block';
         document.getElementById('artist_list_13').style = 'display: none';
         document.getElementById('artist_list_14').style = 'display: none';
         document.getElementById('artist_list_15').style = 'display: none';
@@ -592,7 +566,7 @@ function vibor(e) {
         document.getElementById('artist_list_10').style = 'display: none';
         document.getElementById('artist_list_11').style = 'display: none';
         document.getElementById('artist_list_12').style = 'display: none';
-        document.getElementById('artist_list_13').style = 'display: block';
+        document.getElementById('artist_list_13').style = 'display: inline-block';
         document.getElementById('artist_list_14').style = 'display: none';
         document.getElementById('artist_list_15').style = 'display: none';
         music.src = albom_13[0];
@@ -613,7 +587,7 @@ function vibor(e) {
         document.getElementById('artist_list_11').style = 'display: none';
         document.getElementById('artist_list_12').style = 'display: none';
         document.getElementById('artist_list_13').style = 'display: none';
-        document.getElementById('artist_list_14').style = 'display: block';
+        document.getElementById('artist_list_14').style = 'display: inline-block';
         document.getElementById('artist_list_15').style = 'display: none';
         music.src = albom_14[0];
         last_index = albom_14.length-1;
@@ -634,7 +608,7 @@ function vibor(e) {
         document.getElementById('artist_list_12').style = 'display: none';
         document.getElementById('artist_list_13').style = 'display: none';
         document.getElementById('artist_list_14').style = 'display: none';
-        document.getElementById('artist_list_15').style = 'display: block';
+        document.getElementById('artist_list_15').style = 'display: inline-block';
         music.src = albom_15[0];
         last_index = albom_15.length-1;
         src_value = albom_15[last_index];
@@ -643,7 +617,6 @@ function vibor(e) {
     music_albom.src = src_value;
     //запуск эффектов
     play_effect();
-    setSlide();
 }
 
 function play_list(e) {
