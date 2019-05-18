@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="автор сайта Котельников Роман">
-    <meta name="keywords" content="наша музыка, руки вверх, руки вверх слушать, руки вверх бесплатно, руки вверх 2019, она меня целует руки вверх, руки вверх все песни, руки вверх онлайн, руки вверх слушать онлайн, руки вверх слушать бесплатно, руки вверх онлайн бесплатно, руки вверх слушать онлайн бесплатно, гордость руки вверх, руки вверх к черту, руки вверх новое, руки вверх к черту эту гордость, слушать руки вверх все песни, группа руки вверх, руки вверх новая песня, музыка руки вверх, руки вверх все песни бесплатно, песни руки вверх слушать бесплатно, руки вверх песни онлайн, руки вверх +все песни слушать онлайн, руки вверх лучшие песни, руки вверх альбомы, руки вверх девчонка">
+    <meta name="keywords" content="руки вверх, руки вверх слушать, руки вверх все песни, руки вверх онлайн, руки вверх слушать онлайн, руки вверх слушать, руки вверх онлайн, руки вверх новое, слушать руки вверх все песни, группа руки вверх, музыка руки вверх, песни руки вверх слушать бесплатно, руки вверх песни онлайн">
     <meta name="description" content="сайт наша музыка, музыка слушать онлайн русские песни слушать подряд">
     <meta name="robots" content="all">
     <link rel="stylesheet" href="css/main.css">
@@ -16,7 +16,7 @@
     <!-- Чтобы в режиме отладки был представлен не обфусцированный код (не защищёный, для отладки)-->
     <!--<script src="https://music.yandex.ru/api/audio/dist/index.map.json"></script>-->
     <!--скрипт для каждого салиста должен быть вверху-->
-    <title>наша музыка</title>
+    <title>наша музыка / руки вверх слушать</title>
 </head>
 <body  onload="yaMusic()">
     <header>
@@ -65,7 +65,7 @@
                 <button onclick="play_effect()">пред</button>
                 <form onsubmit="return false" class="artist_setting">-->
                     <!--alboms-->
-                    <h3>Альбомы</h3>
+                    <h3>руки вверх альбомы</h3>
                     <select class="select_list" id="artist_alboms" onchange="vibor(this)" autofocus>
                         <option value="artist_albom_1">дышите равномерно</option>
                         <option value="artist_albom_2">сделай погромче!</option>
@@ -79,10 +79,13 @@
                         <option value="artist_albom_10">конец попсе, танцуют все</option>
                         <option value="artist_albom_11">мне с тобою хорошо</option>
                         <option value="artist_albom_12">Fuc*in' Rock'n'Roll</option>
+                        <option value="artist_albom_13">открой мне дверь</option>
+                        <option value="artist_albom_14">The best</option>
+                        <option value="artist_albom_15">руки вверх последнее</option>
                     </select>
                     <!--end alboms-->
                     <!--list-->
-                    <h3>песни руки вверх</h3>
+                    <h3>руки вверх все песни</h3>
                     <select class="select_list" id="artist_list_1" onchange="play_list(this)">
                         <option value="list_1.1">Доброе утро</option>
                         <option value="list_1.2">Малыш</option>
@@ -250,6 +253,62 @@
                             <option value="list_12.10">расстались</option>
                             <option value="list_12.11">лето в стили Samba</option>
                             <option value="list_12.12">Наташа (European dance mix)</option>
+                        </select>
+                        <select class="select_list" id="artist_list_13" style="display: none" onchange="play_list(this)">
+                            <option value="list_13.1">открой мне дверь</option>
+                            <option value="list_13.2">я тебя люблю</option>
+                            <option value="list_13.3">счастлив без тебя</option>
+                            <option value="list_13.4">мама</option>
+                            <option value="list_13.5">жаль</option>
+                            <option value="list_13.6">миражи</option>
+                            <option value="list_13.7">девочка из прошлого</option>
+                            <option value="list_13.8">останься</option>
+                            <option value="list_13.9">разние</option>
+                            <option value="list_13.10">пам-пам-пам</option>
+                            <option value="list_13.11">увидемся в снах</option>
+                            <option value="list_13.12">девочка из прошлого (с ST1M)</option>
+                        </select>
+                        <select class="select_list" id="artist_list_14" style="display: none" onchange="play_list(this)">
+                            <option value="list_14.1">крошка моя</option>
+                            <option value="list_14.2">чужие губы</option>
+                            <option value="list_14.3">я тебя украду</option>
+                            <option value="list_14.4">ну где же вы девчёнки</option>
+                            <option value="list_14.5">атаман</option>
+                            <option value="list_14.6">ай-яй-яй</option>
+                            <option value="list_14.7">Алёшка</option>
+                            <option value="list_14.8">18 мне уже</option>
+                            <option value="list_14.9">Серёжа (dance mix)</option>
+                            <option value="list_14.10">выбирай сама</option>
+                            <option value="list_14.11">стоят подружки</option>
+                            <option value="list_14.12">он тебя целует</option>
+                            <option value="list_14.13">он не я</option>
+                            <option value="list_14.14">думала</option>
+                            <option value="list_14.15">детская</option>
+                            <option value="list_14.16">сделать тебя взрослой</option>
+                            <option value="list_14.17">я тебя люблю</option>
+                            <option value="list_14.18">девочка из прошлого (с ST1M)</option>
+                            <option value="list_14.19">песенка</option>
+                            <option value="list_14.20">лучший парень</option>
+                            <option value="list_14.21">он не любит тебя</option>
+                            <option value="list_14.22">здравствуй это я</option>
+                            <option value="list_14.23">доброй, нежной, ласковой</option>
+                            <option value="list_14.24">маленькие девочки</option>
+                            <option value="list_14.25">уходи</option>
+                            <option value="list_14.26">девчёнки (megamix)</option>
+                            <option value="list_14.27">я тебя люблю</option>
+                            <option value="list_14.28">крылья (с Bahh Tee)</option>
+                        </select>
+                        <select class="select_list" id="artist_list_15" style="display: none" onchange="play_list(this)">
+                            <option value="list_15.1">что же ты наделала</option>
+                            <option value="list_15.2">королева красоты</option>
+                            <option value="list_15.3">когда мы были молодыми</option>
+                            <option value="list_15.4">забери ключи</option>
+                            <option value="list_15.5">плачешь в темноте</option>
+                            <option value="list_15.6">с новым годом (молодыми)</option>
+                            <option value="list_15.7">танцы</option>
+                            <option value="list_15.8">к чёрту эту гордость</option>
+                            <option value="list_15.9">слэмятся пацаны</option>
+                            <option value="list_15.10">она меня целует</option>
                         </select>
                     <!--end list-->
                     <input type="submit" onclick="ansver()" value="выбрать">
