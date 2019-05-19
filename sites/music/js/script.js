@@ -25,7 +25,7 @@ $(function(){
     $('.button_menu').on('click', function(e){
         e.preventDefault;
         $(this).toggleClass('button_menu_active');
-        ('.menu').css('display', 'block');
+        $('.menu').toggleClass('active');
     });
 });
 

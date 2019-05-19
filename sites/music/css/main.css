@@ -61,7 +61,7 @@ nav {
 .button_menu {
     position: relative;
     float: right;
-    display: none;
+    /*display: none;*/
     width: 30px;
     height: 40px;
     background: #fff;
@@ -109,12 +109,16 @@ nav {
 .button_menu_active span::after {
     transform: rotate(-45deg);
 }
+
 .menu {
     width: 55%;
     margin: 0 auto;
     display: -webkit-flex;
     display: flex;
     /*background: yellow;*/
+}
+.menu.active {
+    display: block;
 }
 
 .menu li {
