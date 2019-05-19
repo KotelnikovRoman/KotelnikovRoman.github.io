@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 870px) {
     /********** header **********/
-    nav ul {
+    .menu {
         width: 60%;
     }
     /********** main **********/
@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 870px) {
     /********** header **********/
-    nav ul {
+    .menu {
         width: 70%;
     }
     /********** main **********/
@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 685px) {
     /********** header **********/
-    nav ul {
+    .menu {
         width: 75%;
     }
     /********** main **********/
@@ -61,7 +61,7 @@
         align-content: center;
     }
     /********** header **********/
-    nav ul {
+    .menu {
         width: 100%;
     }
     /********** main **********/
@@ -81,7 +81,10 @@
 
 @media screen and (max-width: 479px) {
     /********** header **********/
-    nav ul {
+    .button_menu {
+        display: block;
+    }
+    .menu {
         display: none;
     }
     nav ul li {

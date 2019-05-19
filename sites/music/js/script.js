@@ -21,7 +21,13 @@ function stop_effect() {
     uroven.src = 'img/uroven.jpg';
 }
 
-
+$(function(){
+    $('.button_menu').on('click', function(e){
+        e.preventDefault;
+        $(this).toggleClass('button_menu_active');
+        ('.menu').css('display', 'block');
+    });
+});
 
 
 //document.getElementById('play_but').onclick = pro();
