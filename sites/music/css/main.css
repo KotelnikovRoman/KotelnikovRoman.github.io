@@ -61,7 +61,7 @@ nav {
 .button_menu {
     position: relative;
     float: right;
-    /*display: none;*/
+    display: none;
     width: 30px;
     height: 40px;
     background: #fff;
