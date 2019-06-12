@@ -2,6 +2,12 @@ music = document.getElementById('music');
 music_albom = document.getElementById('music_albom');
 slide = document.getElementById('slide');
 
+//function для создания объекта
+function music_artist(name, alboms) {
+    this.name = name;
+    this.alboms = alboms;
+}
+
 //for smeni alboma
 var last_index;
 artist_alboms = document.getElementById('artist_alboms');

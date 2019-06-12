@@ -1,4 +1,5 @@
 //дышите равномерно
+alboms = [];
 albom_1 = new Array(
     'https://music.yandex.ru/iframe/#track/26525262/3157855/black/', //dobroe utro
     'https://music.yandex.ru/iframe/#track/26525263/3157855/black/', //malish
@@ -267,6 +268,27 @@ albom_15 = new Array(
     'https://music.yandex.ru/iframe/#track/47028718/6358184/'+b,    //slemyatsya pacani
     'https://music.yandex.ru/iframe/#track/52109371/7315631/'+b,    //ona menya celuet
 );
+
+//все альбомы в один массив
+//для добавления в объект
+alboms[0] = albom_1;
+alboms[1] = albom_2;
+alboms[2] = albom_3;
+alboms[3] = albom_4;
+alboms[4] = albom_5;
+alboms[5] = albom_6;
+alboms[6] = albom_7;
+alboms[7] = albom_8;
+alboms[8] = albom_9;
+alboms[9] = albom_10;
+alboms[10] = albom_11;
+alboms[11] = albom_12;
+alboms[12] = albom_13;
+alboms[13] = albom_14;
+alboms[14] = albom_15;
+
+var artist = new music_artist('руки вверх', alboms);
+
 
 artist_img = new Array(
     'img/ruki_vverh/ruki_vverh0.jpg',
