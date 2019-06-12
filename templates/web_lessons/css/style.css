@@ -30,9 +30,24 @@ footer {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100px;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  background: rgba(41, 61, 87, 0.8);
+}
+
+.fixed_sidebar ul li {
+  border: 1px solid #7a8595;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.fixed_sidebar ul li a {
+  font-weight: bold;
+  color: #7a8595;
+}
+
+.fixed_sidebar ul li a:hover {
+  color: #fff;
 }
 
 @media screen and (max-width: 959px) {
