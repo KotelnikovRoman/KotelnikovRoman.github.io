@@ -5,6 +5,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #3b3c46;
 }
 
 a {
@@ -79,6 +80,61 @@ footer {
   transition: all 2s;
 }
 
+/*header*/
+.container .logo {
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+.container .logo a {
+  color: #3b3c46;
+}
+
+.container .logo a span {
+  color: #f3873d;
+}
+
+.container nav {
+  width: 700px;
+  margin-top: 25px;
+}
+
+.container nav.content_flex {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container nav.content_flex ul {
+  height: 37px;
+  line-height: 37px;
+}
+
+.container nav.content_flex ul li {
+  margin-right: 15px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.container nav.content_flex ul li a {
+  font-weight: bold;
+  color: #3b3c46;
+}
+
+.container nav.content_flex button {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 37px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #ffd200;
+  border-radius: 5px;
+  outline: 0;
+}
+
+/*main*/
+/*footer*/
 @media screen and (max-width: 959px) {
   body {
     background: yellow;
