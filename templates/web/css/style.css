@@ -82,6 +82,7 @@ footer {
 
 /*header*/
 .container .logo {
+  font-family: 'Indie Flower', cursive;
   margin-right: 50px;
   text-transform: uppercase;
 }
@@ -133,8 +134,24 @@ footer {
   outline: 0;
 }
 
+.container .slogan h2 {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .slogan p {
+  text-align: center;
+  color: #755127;
+}
+
 /*main*/
 /*footer*/
+footer {
+  color: #3d4b5c;
+  background: #1b2b40;
+}
+
 @media screen and (max-width: 959px) {
   body {
     background: yellow;
