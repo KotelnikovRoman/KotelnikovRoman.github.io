@@ -16,6 +16,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="wrapper">
     <aside class="fixed_sidebar">
         <ul>
             <li>
@@ -25,14 +26,30 @@
                     <li><a href="">зарегистрироваться</a></li>
                 </ul>
             </li>
-            <li><a href="">курсы</a></li>
-            <li><a href="">задачи</a></li>
-            <li><a href="">проекты</a></li>
-            <li><a href="">опросы</a></li>
-            <li><a href="">чат</a></li>
-            <li><a href="">форум</a></li>
-            <li><a href="">подписка</a></li>
-            <li><a href="">помощь</a></li>
+            <li>
+                <a href="">курсы</a>
+            </li>
+            <li>
+                <a href="">задачи</a>
+            </li>
+            <li>
+                <a href="">проекты</a>
+            </li>
+            <li>
+                <a href="">опросы</a>
+            </li>
+            <li>
+                <a href="">чат</a>
+            </li>
+            <li>
+                <a href="">форум</a>
+            </li>
+            <li>
+                <a href="">подписка</a>
+            </li>
+            <li>
+                <a href="">помощь</a>
+            </li>
             <li><a href="#">нас уже<br><span>57</span></a></li>
         </ul>
     </aside>
@@ -44,15 +61,56 @@
             <!-- /.logo -->
             <nav class="content_flex">
                 <ul class="content_flex">
-                    <li><a href="">отзывы</a></li>
-                    <li><a href="">о нас</a></li>
-                    <li><a href="">web</a></li>
+                    <li><a href="#web" class="anchor__link" data-target="anchor">web</a></li>
+                    <li><a href="#about" class="anchor__link" data-target="anchor">о нас</a></li>
+                    <li><a href="#comments" class="anchor__link" data-target="anchor">отзывы</a></li>
                 </ul>
                 <button>начать обучение</button>
             </nav>
         </div>
         <!--container-->
         <div class="container">
+            <section class="slidestuff">
+                <!--сылки для устаревших браузеров-->
+                <a href="#a" title="Content A">Content A</a>
+                <a href="#b" title="Content B">Content B</a>
+                <a href="#c" title="Content C">Content C</a>
+                <a href="#d" title="Content D">Content D</a>
+                <!-- ссылки для щелчка -->
+                <!--если слаид A посмотреть слайд D или B -->
+                <span id="g-go-last" class="no-jump"></span>
+                <a href="#g-go-3" class="g-go-last" title="" tabindex="-1"></a>
+                <a href="g-go-first" id="d-go-2" title="" tabindex="-1"></a>
+                <!--если слаид B посмотреть слайд A или C -->
+                <span id="g-go-first" class="no-jump"></span>
+                <a href="#g-go-last" class="g-go-first" tabindex="-1"></a>
+                <a href="#g-go-2" title="" id="d-go-3" tabindex="-1"></a>
+                <!--если слаид C посмотреть слайд B или D -->
+                <span id="g-go-2" class="no-jump"></span>
+                <a href="#g-go-first" title="" class="g-go-2" tabindex="-1"></a>
+                <a href="#g-go-3" title="" id="g-go-last" tabindex="-1"></a>
+                <!--если слаид D посмотреть слайд C или A -->
+                <span id="g-go-3" class="no-jump"></span>
+                <a href="#g-go-2" title="" class="g-go-3" tabindex="-1"></a>
+                <a href="#g-go-last" title="" id="d-go-first" tabindex="-1"></a>
+                <!-- ползунок -->
+                <section class="sider">
+                    <div class="fixeOpera">
+                        <article class="first">
+                            <aside>
+                                <figure>
+                                    <img src="" alt="">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </aside>
+                        </article>
+                        <!-- /.first -->
+                    </div>
+                    <!-- /.fixeOpera -->
+                </section>
+                <!-- /.sider -->
+            </section>
+            <!-- /.slidestuff -->
             <div class="slogan">
                 <h2>стань крутым<br> программистом</h2>
                 <p>webshcool - это крутые онлайн курсы с кучей заданей<br>
@@ -64,9 +122,23 @@
         <!-- /.container -->
     </header>
     <main>
-        <div class="container">main</div>
+        <div class="container">
+            <div id="web">
+                <h2>web курс</h2>
+            </div>
+            <!-- /#web -->
+            <div id="about">
+                    <h2>о нас</h2>
+            </div>
+            <!-- /#about -->
+            <div id="comments">
+                    <h2>отзывы</h2>
+            </div>
+            <!-- /#comments -->
+        </div>
         <!--container-->
     </main>
+    </div>
     <footer>
         <div class="container">footer</div>
         <!--container-->
