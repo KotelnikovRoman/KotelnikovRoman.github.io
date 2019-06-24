@@ -10,4 +10,8 @@ $(function(){
         $('body, html').animate({scrollTop: bl_top}, 700);
         return false;
     });
+    $('.menu_btn').on('click', function(e){
+        $(this).toggleClass('menu_btn_active');
+        return false;
+    });
 });
