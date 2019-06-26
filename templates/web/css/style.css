@@ -58,6 +58,18 @@ footer {
   margin-bottom: 40px;
 }
 
+.circle.wow {
+  float: left;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  background: black;
+  border-radius: 50%;
+}
+
 .menu_btn {
   width: 40px;
   height: 40px;
@@ -174,9 +186,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Indie Flower', cursive;
   margin-right: 50px;
-  text-transform: uppercase;
 }
 
 .container .logo a {
