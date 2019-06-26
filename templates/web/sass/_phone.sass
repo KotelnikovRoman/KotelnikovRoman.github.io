@@ -1,8 +1,27 @@
-@media screen and (max-width: 1085px)
+@media screen and (min-width: 1181px)
     .menu_btn
-        display: block
+        transition: 0.5s
+        transform: scaleX(0)
+
+    .fixed_sidebar
+        transition: 0.5s
+        transform: scaleX(1)
     
+@media screen and (max-width: 1180px)
+    .menu_btn
+        transition: 0.5s
+        transform: scaleX(1)
+
+    .fixed_sidebar
+        transition: 0.5s
+        transform: scaleX(0) translateX(-30%)
+        opacity: 0
+
+    .fixed_sidebar_active
+        transform: scaleX(1) translateX(0%)
+        opacity: 1
+
+
 @media screen and (max-width: 959px)
     body
         background: yellow
-    

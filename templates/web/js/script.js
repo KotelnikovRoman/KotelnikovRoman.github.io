@@ -12,6 +12,7 @@ $(function(){
     });
     $('.menu_btn').on('click', function(e){
         $(this).toggleClass('menu_btn_active');
+        $('.fixed_sidebar').toggleClass('fixed_sidebar_active');
         return false;
     });
 });
