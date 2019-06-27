@@ -22,20 +22,6 @@ li {
   min-height: 100%;
 }
 
-header {
-  height: 100vh;
-}
-
-main {
-  height: 100%;
-}
-
-header,
-main,
-footer {
-  width: 100%;
-}
-
 footer {
   display: block;
   height: 40px;
@@ -241,7 +227,9 @@ footer {
 }
 
 .container .slogan h2 {
-  font-size: 5em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 3em;
   font-weight: bold;
   text-align: center;
 }
@@ -249,6 +237,24 @@ footer {
 .container .slogan p {
   text-align: center;
   color: #755127;
+}
+
+.container .img_mac {
+  width: 738px;
+  height: 430px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 4.5%;
+  padding-left: 10.3%;
+  background: url("../img/img_mac.png");
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .img_mac .img_mac-code {
+  width: 84.8%;
+  height: 85.3%;
+  background: url("../img/code.gif") no-repeat center top/cover;
 }
 
 main #web,
