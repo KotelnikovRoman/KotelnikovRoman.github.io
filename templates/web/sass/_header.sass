@@ -74,21 +74,21 @@
 /*header*/
 
 .container
-    .logo
-        display: flex
-        //font-family: 'Indie Flower', cursive
-        margin-right: 50px
-        //text-transform: uppercase
-        a
-            color: #3b3c46
-            span
-                color: #f3873d
-        h1
-            display: block
+    .navbar
+        &__logo
+            //после окончания раскоментировать шрифт
+            //font-family: 'Indie Flower', cursive 
+            min-width: auto
+            margin-right: 50px
+            h1
+                a
+                    color: #3b3c46
+                    span
+                        color: #f3873d
     nav
-        width: 700px
         margin-top: 25px
     nav.content_flex
+        display: flex
         justify-content: flex-end
         ul
             height: 37px

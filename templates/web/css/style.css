@@ -38,10 +38,18 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar.content_flex {
+  background: yellow;
 }
 
 .indent {
   margin-bottom: 40px;
+  background: red;
+  border: 5px solid black;
 }
 
 .circle.wow {
@@ -168,31 +176,27 @@ footer {
 }
 
 /*header*/
-.container .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.container .navbar__logo {
+  min-width: auto;
   margin-right: 50px;
 }
 
-.container .logo a {
+.container .navbar__logo h1 a {
   color: #3b3c46;
 }
 
-.container .logo a span {
+.container .navbar__logo h1 a span {
   color: #f3873d;
 }
 
-.container .logo h1 {
-  display: block;
-}
-
 .container nav {
-  width: 700px;
   margin-top: 25px;
 }
 
 .container nav.content_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -305,9 +309,66 @@ main #comments h2 {
   }
 }
 
-@media screen and (max-width: 959px) {
-  body {
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+  .navbar.content_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar__logo {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar nav {
+    width: 100%;
+  }
+  .navbar nav.content_flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .logo {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 976px) {
+  nav {
+    width: 700px;
+  }
+  nav.content_flax {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .container.content_flex {
+    background: blue;
+  }
+  .container.content_flex .logo {
+    width: 100%;
+    margin: 0;
+    text-align: center;
     background: yellow;
+  }
+  .container.content_flex nav {
+    width: 100%;
+    margin: 0;
+  }
+  .container.content_flex nav.content_flex {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    background: green;
   }
 }
 /*# sourceMappingURL=style.css.map */
