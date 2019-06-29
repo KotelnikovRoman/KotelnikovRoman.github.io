@@ -22,6 +22,43 @@
         opacity: 1
 
 
-@media screen and (max-width: 959px)
-    body
-        background: yellow
+@media screen and (max-width: 960px)
+    .container
+        width: 100%
+    .navbar.content_flex
+        flex-direction: column
+        //background: blue
+    .navbar
+        &__logo
+            width: 100%
+            text-align: center
+            //background: yellow
+        nav
+            width: 100%
+        nav.content_flex
+            justify-content: center
+
+@media screen and (max-width: 1075px)
+    .logo
+        margin-left: 10%
+
+@media screen and (min-width: 976px)
+    nav
+        width: 700px
+    nav.content_flax
+        justify-content: flex-end
+
+@media screen and (max-width: 975px)
+    .container.content_flex
+        background: blue
+        .logo
+            width: 100%
+            margin: 0
+            text-align: center
+            background: yellow
+        nav
+            width: 100%
+            margin: 0
+        nav.content_flex
+            justify-content: normal
+            background: green
