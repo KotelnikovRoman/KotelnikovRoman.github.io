@@ -1,64 +1,66 @@
 @media screen and (min-width: 1181px)
-    .menu_btn
+    .page__btn
         transition: 0.5s
         transform: scaleX(0)
-
-    .fixed_sidebar
+    .page__sidebar
         transition: 0.5s
         transform: scaleX(1)
     
 @media screen and (max-width: 1180px)
-    .menu_btn
+    .page__btn
         transition: 0.5s
         transform: scaleX(1)
-
-    .fixed_sidebar
+    .page__sidebar
         transition: 0.5s
         transform: scaleX(0) translateX(-30%)
         opacity: 0
-
-    .fixed_sidebar_active
+    .page__sidebar_active
         transform: scaleX(1) translateX(0%)
         opacity: 1
 
+@media screen and (min-width: 1085px)
+    .nav
+            justify-content: flex-end
+
+@media screen and (max-width: 1084px)
+    .container
+        //background: grey
+    .navbar
+        min-width: 100%
+        flex-direction: column
+        &__logo
+            width: 100%
+            text-align: center
+            //background: blue
+        &__nav
+            min-width: 100%
+            //background: #777777
+        .nav
+            justify-content: center
 
 @media screen and (max-width: 960px)
     .container
         width: 100%
-    .navbar.content_flex
-        flex-direction: column
-        //background: blue
-    .navbar
-        &__logo
-            width: 100%
-            text-align: center
-            //background: yellow
-        nav
-            width: 100%
-        nav.content_flex
-            justify-content: center
+    .bg-mac
+        width: 80%
+        margin: 0 auto
 
-@media screen and (max-width: 1075px)
-    .logo
-        margin-left: 10%
+@media screen and (min-width: 757px)
+    .bg-mac
+        //background: #000
+        &__code
+            top: 10%
+            height: 80%
 
-@media screen and (min-width: 976px)
-    nav
-        width: 700px
-    nav.content_flax
-        justify-content: flex-end
+@media screen and (max-width: 756px)
+    .nav
+        max-width: 100%
+    .bg-mac
+        max-width: 80%
+        //background: #ccc
+        &__code
+            top: 7.9%
+            max-width: 100%
+            max-height: 100%
+            background: #ccc
 
-@media screen and (max-width: 975px)
-    .container.content_flex
-        background: blue
-        .logo
-            width: 100%
-            margin: 0
-            text-align: center
-            background: yellow
-        nav
-            width: 100%
-            margin: 0
-        nav.content_flex
-            justify-content: normal
-            background: green

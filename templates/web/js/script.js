@@ -1,7 +1,7 @@
 /*script*/
 $(function(){
     $(".active_menu").click(function(){
-        $(".menu_input").toggleClass("show_menu");
+        $(".submenu").toggleClass("submenu_active");
         return false;
     });
 
@@ -12,9 +12,10 @@ $(function(){
         return false;
     });
 
-    $('.menu_btn').on('click', function(){
-        $(this).toggleClass('menu_btn_active');
-        $('.fixed_sidebar').toggleClass('fixed_sidebar_active');
+    $('.page__btn').on('click', function(){
+        $(this).toggleClass('page__btn_active');
+        $('.menu-btn__line').toggleClass('menu-btn__line_active');
+        $('.page__sidebar').toggleClass('page__sidebar_active');
         return false;
     });
 });

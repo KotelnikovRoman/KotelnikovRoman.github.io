@@ -1,11 +1,11 @@
 *
     margin: 0
     padding: 0
-
-
-body
     font-family: Arial, Helvetica, sans-serif
     color: #3b3c46
+
+@mixin flex
+    display: flex
 
 
 a
@@ -16,16 +16,6 @@ li
     list-style: none
     text-transform: uppercase
 
-#wrapper
-    position: relative
-    min-height: 100%
-
-footer
-    display: block
-    height: 40px
-    color: #3d4b5c
-    background: #1b2b40
-
 .container
     width: 960px
     margin: 0 auto
@@ -34,21 +24,8 @@ footer
     display: flex
     flex-wrap: wrap
 
-.navbar.content_flex
-    background: yellow
-
-.indent
-    margin-bottom: 40px
-    background: red
-    border: 5px solid black
-
-.circle.wow
-    float: left
-    width: 100px
-    height: 100px
-    line-height: 100px
-    text-align: center
-    font-size: 20px
-    color: white
-    background: black
-    border-radius: 50%
+footer
+    display: block
+    height: 40px
+    color: #3d4b5c
+    background: #1b2b40
