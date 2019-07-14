@@ -255,16 +255,37 @@ footer {
   height: 100%;
 }
 
-.main #web,
-.main #about,
-.main #comments {
-  height: 100vh;
+.main__title {
+  text-align: center;
+  color: #172b53;
 }
 
-.main #web h2,
-.main #about h2,
-.main #comments h2 {
+.main .course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.main .course__img {
+  width: 330px;
+  height: 230px;
+}
+
+.main .course__article {
+  width: 630px;
+}
+
+.main .course__title {
   text-align: center;
+}
+
+.main .course__link {
+  color: #172b53;
+}
+
+.main .course__text {
+  color: #495878;
 }
 
 @media screen and (min-width: 1181px) {
