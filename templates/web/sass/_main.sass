@@ -1,15 +1,27 @@
 .main
+    &__section
+        margin-top: 25px
     &__title
         text-align: center
         color: #172b53
     .course
-        display: flex
+        +flex
         margin-top: 20px
+        background: yellow
+        
         &__img
-            width: 330px
             height: 230px
+        &__img_left
+            order: 1
+        &__img_right
+            order: 2
         &__article
-            width: 630px
+            flex: 3
+            padding: 0 15px
+        &__article_right
+            order: 2
+        &__article_left
+            order: 1
         &__title
             text-align: center
         &__link

@@ -8,20 +8,47 @@
 </head>
 <body>
     <form action="">
-        <fieldset>
-            <legend>Сумма займа</legend>
-            <input type="text">
-        </fieldset>
-        <fieldset>
-            <legend>Срок займа</legend>
-            <input type="text">
-        </fieldset>
-        <button>
-            получить
-            <span>
-                <script></script>
-            </span>
-        </button>
+        <legend>Товар</legend>
+        <label for="ingredients">Ингридиенты</label>
+        <em></em>
+        <select name="ingredients" id="" multiple="multiple">
+            <option value="10" id="ingredient1" onclick="counting(this)">ingredient 10р</option>
+            <option value="20" id="ingredient2" onclick="counting(this)">ingredient 20р</option>
+            <option value="30" id="ingredient3" onclick="counting(this)">ingredient 30р</option>
+        </select>
+        <label for="number">Количество</label>
+        <input type="number" id="my_number" min="1" max="10" onclick="amount_of_goods(this, 100)" value="1">  цена <span id="price">100</span>
     </form>
+    <script>
+        /*для добавления нового ингридиента
+        надо скопировать option, добавить новый id
+        и добавить новую строку тут*/
+        var ingredient1 = document.getElementById("ingredient1").value;
+        var ingredient2 = document.getElementById("ingredient2").value;
+        var ingredient3 = document.getElementById("ingredient3").value;
+        var my_number = document.getElementById("my_number").value;
+        var ingredients = [ingredient1,ingredient2,ingredient3];
+        var flags = new Array(ingredients.length);
+        var price = document.getElementById("price");
+        var flag;
+        function counting(e) {
+            for(var i=0;i < ingredients.length;i++) {
+                if(e.value == ingredients[i]) {
+                    if(!flags[i]) {
+                        price.innerHTML = Number(price.innerHTML) + Number(e.value);
+                    }
+                    else {
+                        price.innerHTML = Number(price.innerHTML) - Number(e.value);
+                    }
+                    flags[i] = !flags[i];
+                }
+            }
+        }
+
+        function amount_of_goods(e, x) {
+            amount = x * Number(e.value);
+            price.innerHTML = amount;
+        }
+    </script>
 </body>
 </html>

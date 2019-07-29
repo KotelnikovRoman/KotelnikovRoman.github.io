@@ -64,3 +64,35 @@
             max-height: 100%
             background: #ccc
 
+@media screen and (min-width: 500px)
+    .main
+        &__section
+            .course
+                &__img
+                    width: 330px
+                &__article
+                    width: 630px
+
+@media screen and (max-width: 499px)
+    .navbar
+        &__logo
+            /**/
+        .nav
+            &__item
+                width: 100%
+                margin-right: 0
+                background: yellow
+    .main
+        border: 1px solid black
+        &__section
+            .course
+                width: 100%
+                flex-direction: column
+                align-items: stretch
+                &__icon
+                    max-width: 100%
+                .icon
+                    &__img
+                        flex: 1
+                &__article
+                    flex: 1
