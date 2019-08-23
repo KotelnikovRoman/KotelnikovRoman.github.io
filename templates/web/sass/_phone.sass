@@ -20,7 +20,7 @@
 
 @media screen and (min-width: 1085px)
     .nav
-            justify-content: flex-end
+        justify-content: flex-end
 
 @media screen and (max-width: 1084px)
     .container
@@ -55,6 +55,8 @@
 @media screen and (max-width: 756px)
     .nav
         max-width: 100%
+        &__list
+            max-width: 100%
     .bg-mac
         max-width: 80%
         //background: #ccc
@@ -65,6 +67,11 @@
             background: #ccc
 
 @media screen and (min-width: 500px)
+    .header
+        .navbar
+        .slogan
+            &__title
+                font-size: 3em
     .main
         &__section
             .course
@@ -75,24 +82,25 @@
 
 @media screen and (max-width: 499px)
     .navbar
+        margin: 0
+        padding: 0
         &__logo
             /**/
         .nav
-            &__item
-                width: 100%
-                margin-right: 0
-                background: yellow
-    .main
-        border: 1px solid black
-        &__section
-            .course
+            flex-direction: column
+            &__list
                 width: 100%
                 flex-direction: column
-                align-items: stretch
-                &__icon
-                    max-width: 100%
-                .icon
-                    &__img
-                        flex: 1
-                &__article
-                    flex: 1
+                flex-grow: 1
+            &__item
+                width: 100%
+                margin: 0
+                padding: 0
+                background: yellow
+            &__button
+                flex-grow: 2
+    .slogan
+        &__title
+            padding: 10px 20px
+            box-sizing: border-box
+            font-size: 2em

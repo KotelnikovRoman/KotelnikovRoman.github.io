@@ -7,47 +7,46 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <legend>Товар</legend>
-        <label for="ingredients">Ингридиенты</label>
-        <em></em>
-        <select name="ingredients" id="" multiple="multiple">
-            <option value="10" id="ingredient1" onclick="counting(this)">ingredient 10р</option>
-            <option value="20" id="ingredient2" onclick="counting(this)">ingredient 20р</option>
-            <option value="30" id="ingredient3" onclick="counting(this)">ingredient 30р</option>
-        </select>
-        <label for="number">Количество</label>
-        <input type="number" id="my_number" min="1" max="10" onclick="amount_of_goods(this, 100)" value="1">  цена <span id="price">100</span>
+    <!--для нового товара надо скопировать форму и изменить id в span-->
+    <!--для двух товаров не должно быть одинакового id в span-->
+    <form method="post" action="">
+        <legend name="goods" id="goods">Товар</legend>
+        <label for="goods_num">Количество</label>
+        <!--в скобках функции указать id товара, количество и цены-->
+        <input type="number" id="goods_num" name="goods_num" min="1" max="10" onclick="amount_of_goods(this, goods, goods_num,  goods_price, 100)" value="1">  
+        цена <span id="goods_price" name="goods_price">100</span>
+        <input type="button" value="купить" onclick="buy()">
+        <input type="button" value="корзина" onclick="basket()">
     </form>
     <script>
-        /*для добавления нового ингридиента
-        надо скопировать option, добавить новый id
-        и добавить новую строку тут*/
-        var ingredient1 = document.getElementById("ingredient1").value;
-        var ingredient2 = document.getElementById("ingredient2").value;
-        var ingredient3 = document.getElementById("ingredient3").value;
-        var my_number = document.getElementById("my_number").value;
-        var ingredients = [ingredient1,ingredient2,ingredient3];
-        var flags = new Array(ingredients.length);
-        var price = document.getElementById("price");
-        var flag;
-        function counting(e) {
-            for(var i=0;i < ingredients.length;i++) {
-                if(e.value == ingredients[i]) {
-                    if(!flags[i]) {
-                        price.innerHTML = Number(price.innerHTML) + Number(e.value);
-                    }
-                    else {
-                        price.innerHTML = Number(price.innerHTML) - Number(e.value);
-                    }
-                    flags[i] = !flags[i];
-                }
-            }
+        //var my_number = document.getElementById("my_number").value;
+        //для коректной работы нового товара надо добавить id
+        //скопируйте строку ниже и измените
+        //пример var new_id = document.getElementById("new_id");
+        var goods = document.getElementById("goods");   //id товара
+        var goods_num = document.getElementById("goods_num");   //id количество товара
+        var goods_price = document.getElementById("goods_price"); //id цены
+        
+        function amount_of_goods(e, a, b, c, x) {
+            amount = x * Number(e.value);
+            c.innerHTML = amount;
+            localStorage["goods"]=" товар " + a.innerHTML + "";
+            localStorage["goods_num"]=" количество " + b.value + "шт.";
+            localStorage["goods_price"]=" цена " + c.innerHTML + "р.";
+            /*title = a.innerHTML;
+            num = b.value;
+            price = amount;
+            customer_email = user_email.value;*/
         }
 
-        function amount_of_goods(e, x) {
-            amount = x * Number(e.value);
-            price.innerHTML = amount;
+        function buy() {
+            //указать почту
+            window.location.href = "mailto:rproger@mail.ru";
+        }
+
+        function basket() {
+            //указать адресс страницы с корзиной
+            window.location.href = "basket.html";
         }
     </script>
 </body>
