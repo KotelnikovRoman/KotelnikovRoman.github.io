@@ -112,8 +112,6 @@ footer {
 .page__sidebar .menu li,
 .page__sidebar .menu__item {
   border: 1px solid #7a8595;
-  margin-bottom: 10px;
-  padding: 15px 0;
   text-align: center;
 }
 
@@ -194,8 +192,6 @@ footer {
 }
 
 .container .navbar .nav__item {
-  margin-right: 15px;
-  padding: 0 10px;
   text-align: center;
 }
 
@@ -205,8 +201,6 @@ footer {
 }
 
 .container .navbar .nav__button {
-  padding-left: 10px;
-  padding-right: 10px;
   height: 37px;
   line-height: 37px;
   text-transform: uppercase;
@@ -366,7 +360,15 @@ footer {
 }
 
 @media screen and (min-width: 500px) {
-  .header .slogan__title {
+  header .navbar .nav__item {
+    margin-right: 15px;
+    padding: 0 10px;
+  }
+  header .navbar .nav__button {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header .slogan__title {
     font-size: 3em;
   }
   .main__section .course__img {
@@ -386,13 +388,15 @@ footer {
     /**/
   }
   .navbar .nav {
+    background-color: #ccc;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .navbar .nav__list {
-    width: 100%;
+    max-width: 100%;
+    height: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -400,17 +404,20 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    background-color: green;
   }
   .navbar .nav__item {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: yellow;
+    margin-right: 0px;
   }
   .navbar .nav__button {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .slogan__title {
     padding: 10px 20px;
