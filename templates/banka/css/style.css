@@ -1,0 +1,93 @@
+@font-face () {
+  font-family: "'Roboto'";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto-Regular"), url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1107px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #f4f4f4;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.nav__link {
+  font-size: 12px;
+  color: #95989a;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #95989a;
+}
+
+.login {
+  font-size: 12px;
+  color: #95989a;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.tabs-logo {
+  font-size: 20px;
+  color: #95989a;
+  margin: 0;
+}
+
+.tabs-menu {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs-menu__item {
+  margin-left: 15px;
+}
+/*# sourceMappingURL=style.css.map */
