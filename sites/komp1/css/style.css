@@ -1,0 +1,65 @@
+.header {
+  padding-top: 20px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo__img {
+  width: 69px;
+  height: 79px;
+}
+
+.logo__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo__title {
+  margin-left: 10px;
+  font-family: Helvetica, sans-serif;
+}
+
+.logo__title h1 {
+  font-size: 30px;
+}
+
+.telephone__text {
+  text-align: right;
+  font-family: Arial, helvetica, sans-serif;
+  font-size: 34px;
+  color: #000;
+}
+
+.telephone__tagline {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.contacts {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__link {
+  margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .header__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .telephone__text {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
