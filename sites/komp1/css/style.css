@@ -86,6 +86,8 @@ body {
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(50%, #f7faf7), color-stop(70%, #dedcde));
   background: linear-gradient(to bottom, white 0%, #f7faf7 50%, #dedcde 70%);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .nav__list {
@@ -112,6 +114,27 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.nav__link:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    height: auto;
+  }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__item, .nav__item:nth-child(4) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
 }
 
 @media (max-width: 576px) {

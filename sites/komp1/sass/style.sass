@@ -49,13 +49,13 @@ body
     height: 57px
     text-align: center
     &__link
-        cursor: pointer;
-        font-size: 27px;
-        text-decoration: none;
-        padding: 6px 23px;
-        color: #000000;
-        border-radius: 0px;
-        border: 1px solid #bfbfbf;
+        cursor: pointer
+        font-size: 27px
+        text-decoration: none
+        padding: 6px 23px
+        color: #000000
+        border-radius: 0px
+        border: 1px solid #bfbfbf
 
 .nav
     border-radius: 8px
@@ -63,9 +63,9 @@ body
     height: 50px
     background: rgb(255,255,255)
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(247,250,247,1) 50%, rgba(222,220,222,1) 70%)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
     &__list
         list-style: none
-        //background: yellow
         height: 100%
     &__item
         height: 50px
@@ -82,5 +82,8 @@ body
         color: #000
         text-decoration: none
         cursor: pointer
+    &__link:hover
+        text-decoration: none
+        color: #000000
 
 @import "phone"

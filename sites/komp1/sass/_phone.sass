@@ -2,7 +2,20 @@
     .telephone
         &__text
             //font-size: 1.5em
-    
+
+
+@media (max-width: 767px)
+    .nav
+        height: auto
+        &__list
+            flex-direction: column
+        &__item,
+        &__item:nth-child(4)
+            border-left: 1px solid black
+            border-right: 1px solid black
+
+
+
 @media (max-width: 576px)
     .header
         &__top
