@@ -78,24 +78,34 @@ body {
 }
 
 .nav {
-  background: #eeeeee;
   border-radius: 8px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 50px;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(50%, #f7faf7), color-stop(70%, #dedcde));
+  background: linear-gradient(to bottom, white 0%, #f7faf7 50%, #dedcde 70%);
 }
 
 .nav__list {
   list-style: none;
+  height: 100%;
 }
 
 .nav__item {
-  padding-top: 20px;
+  height: 50px;
+  line-height: 50px;
   padding-left: 20px;
   padding-right: 20px;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: bold;
+  border-right: 1px solid black;
+}
+
+.nav__item:nth-child(4) {
+  border: 0px;
 }
 
 .nav__link {
