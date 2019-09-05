@@ -1,13 +1,28 @@
-@media (max-width: 990px)
+@media (max-width: 991px)
     .telephone
-        &__text
-            //font-size: 1.5em
+        &__tagline
+           /* width: 250px
+            border: 1px solid black*/
 
 
 @media (max-width: 767px)
     .header
         &__top
             flex-direction: column
+
+        .logo
+            width: 100%
+
+    .telephone
+        display: flex
+        width: 100%
+        &__text,
+        &__tagline
+            display: block
+            width: 100%
+        &__tagline
+            height: 50px
+            line-height: 50px
     .nav
         height: auto
         &__list
