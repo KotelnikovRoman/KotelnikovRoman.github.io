@@ -79,8 +79,12 @@ body
         font-size: 10px
         font-weight: bold
         border-right: 1px solid black
+        &_active
+            background: linear-gradient(to bottom, #C64C39, #EF786B)
     &__item:nth-child(4)
         border: 0px
+    &__item:hover
+        background: linear-gradient(to bottom, #C64C39, #EF786B)
     &__link
         color: #000
         text-decoration: none
@@ -88,5 +92,6 @@ body
     &__link:hover
         text-decoration: none
         color: #000000
+
 
 @import "phone"
