@@ -4,6 +4,20 @@ body {
   color: #000;
 }
 
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
 .small {
   text-transform: lowercase;
 }
@@ -103,11 +117,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
   height: 100%;
 }
 
 .nav__item {
+  position: relative;
   height: 50px;
   line-height: 50px;
   padding-left: 20px;
@@ -142,6 +156,45 @@ body {
 .nav__link:hover {
   text-decoration: none;
   color: #000000;
+}
+
+.nav__submenu {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 1px 1px #cccccc;
+          box-shadow: 1px 1px 1px 1px #cccccc;
+}
+
+.nav .submenu {
+  padding: 0;
+}
+
+.nav .submenu__item {
+  height: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  padding: 5px 10px;
+}
+
+.nav .submenu__item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.nav .submenu__item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nav .submenu__item:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C64C39), to(#EF786B));
+  background: linear-gradient(to bottom, #C64C39, #EF786B);
+}
+
+.nav .submenu__link {
+  color: #000;
 }
 
 @media (max-width: 991px) {
