@@ -95,6 +95,8 @@ li a:hover
             background: linear-gradient(to bottom, #C64C39, #EF786B)
         &:hover
             background: linear-gradient(to bottom, #C64C39, #EF786B)
+        &:hover .submenu
+            display: block
     &__item:nth-child(4)
         border: 0px
     &__link
@@ -106,12 +108,13 @@ li a:hover
         color: #000000
     &__submenu
         position: absolute
-        top: 60px
+        top: 50px
         left: 0px
         border-radius: 10px
-        box-shadow: 1px 1px 1px 1px #cccccc
+        box-shadow: 1px 1px 1px 2px #cccccc
     .submenu
         padding: 0
+        display: none
         &__item
             height: 20px
             line-height: 20px
