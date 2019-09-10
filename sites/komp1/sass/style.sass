@@ -2,6 +2,7 @@ body
     font-family: Arial, Helvetica, sans-serif
     background: #ffffff
     color: #000
+    min-height: 100%
     
 ul
     list-style: none
@@ -67,6 +68,9 @@ li a:hover
         color: #000000
         border-radius: 0px
         border: 1px solid #bfbfbf
+    &__link:hover
+        text-decoration: none
+        color: black
 
 .nav
     border-radius: 8px
@@ -95,8 +99,9 @@ li a:hover
             background: linear-gradient(to bottom, #C64C39, #EF786B)
         &:hover
             background: linear-gradient(to bottom, #C64C39, #EF786B)
-        &:hover .submenu
-            display: block
+        &:hover
+            .submenu
+                display: block
     &__item:nth-child(4)
         border: 0px
     &__link
@@ -130,6 +135,10 @@ li a:hover
             background: linear-gradient(to bottom, #C64C39, #EF786B)
         &__link
             color: #000
+
+.main
+    &__title
+        font-size: 45px
 
 
 @import "phone"
