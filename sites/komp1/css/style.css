@@ -24,6 +24,7 @@ li a:hover {
 }
 
 .header {
+  min-height: 100%;
   padding-top: 20px;
 }
 
@@ -206,6 +207,10 @@ li a:hover {
 
 .nav .submenu__link {
   color: #000;
+}
+
+.main__title {
+  font-size: 45px;
 }
 
 @media (max-width: 991px) {
