@@ -24,7 +24,6 @@ li a:hover {
 }
 
 .header {
-  min-height: 100%;
   padding-top: 20px;
 }
 
@@ -215,8 +214,7 @@ li a:hover {
 
 @media (max-width: 991px) {
   .telephone__tagline {
-    /* width: 250px
-            border: 1px solid black*/
+    /*css*/
   }
 }
 
@@ -310,8 +308,28 @@ li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .logo__img {
+    padding-left: 10px;
+  }
   .telephone__text {
     text-align: center;
+  }
+  .telephone__tagline {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .telephone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .telephone__text, .telephone__tagline {
+    width: 100%;
+    text-align: center;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

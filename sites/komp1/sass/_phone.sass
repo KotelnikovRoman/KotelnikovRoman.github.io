@@ -1,8 +1,7 @@
 @media (max-width: 991px)
     .telephone
         &__tagline
-           /* width: 250px
-            border: 1px solid black*/
+           /*css*/
 
 
 @media (max-width: 767px)
@@ -77,9 +76,20 @@
             flex-direction: column
 
     .logo
-        //background: yellow
+        &__img
+            padding-left: 10px
 
     .telephone
-        //background: green
         &__text
             text-align: center
+        &__tagline
+            padding-right: 10px
+
+@media (max-width: 350px)
+    .telephone
+        flex-direction: column
+        &__text,
+        &__tagline
+            width: 100%
+            text-align: center
+            padding: 0
