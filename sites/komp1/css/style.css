@@ -173,7 +173,6 @@ li a:hover {
   position: absolute;
   top: 50px;
   left: 0px;
-  background-color: #fff;
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 1px 2px #cccccc;
           box-shadow: 1px 1px 1px 2px #cccccc;
@@ -188,6 +187,7 @@ li a:hover {
   height: 20px;
   line-height: 20px;
   white-space: nowrap;
+  background-color: #fff;
 }
 
 .nav .submenu__item:first-child {
