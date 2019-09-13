@@ -1,6 +1,6 @@
 body
     font-family: Arial, Helvetica, sans-serif
-    background: #ffffff
+    background: #fff
     color: #000
     min-height: 100%
     
@@ -137,16 +137,54 @@ li a:hover
         color: #000
 .main
     &__title
+        padding-top: 40px
         font-size: 45px
         text-align: center
 
 .slider
+    position: relative
     &__title
+        padding-top: 40px
+        padding-bottom: 20px
         text-align: center
         font-family: monospace
         font-size: 50px
         font-weight: bold
         word-wrap: break-word
+        border-bottom: 1px solid #f5f5f5
+
+.service
+    position: absolute
+    width: 200px
+    height: 45px
+    display: flex
+    align-items: 
+    font-size: 15px
+    font-weight: bold
+    color: #636163
+    border-bottom: 3px solid #E7594A
+    &__1
+        top: 20%
+        left: 65%
+        justify-content: flex-end
+    &__2
+        top: 40%
+        left: 25%
+        justify-content: flex-start
+    &__3
+        width: 350px
+        top: 85%
+        left: 23%
+        justify-content: flex-start
+    &__4
+        width: 300px
+        top: 78%
+        left: 55%
+        justify-content: flex-end
+    &__price
+        padding-top: 25px
+        padding-left: 5px
+        color: #EF5D4A
 
 
 @import "phone"
