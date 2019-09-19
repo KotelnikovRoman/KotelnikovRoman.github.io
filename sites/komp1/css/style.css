@@ -189,6 +189,9 @@ li a:hover {
 .submenu__item {
   height: 20px;
   line-height: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-transform: none;
   white-space: nowrap;
   background-color: #fff;
 }
@@ -215,7 +218,9 @@ li a:hover {
 .main__title {
   padding-top: 40px;
   font-size: 45px;
+  font-weight: bold;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .slider__slide {
@@ -234,7 +239,9 @@ li a:hover {
 }
 
 .slider__img {
-  width: 73%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 .service {
@@ -244,15 +251,16 @@ li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Courier New';
   font-size: 15px;
   font-weight: bold;
-  color: #636163;
+  color: #555555;
   border-bottom: 3px solid #E7594A;
 }
 
 .service__1 {
-  top: 22%;
-  right: 10%;
+  top: 30%;
+  right: 15%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -260,7 +268,7 @@ li a:hover {
 
 .service__2 {
   top: 40%;
-  left: 25%;
+  left: 30%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -287,7 +295,33 @@ li a:hover {
 .service__price {
   padding-top: 25px;
   padding-left: 5px;
-  color: #EF5D4A;
+  color: #EA5848;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages__shadow {
+  -webkit-box-shadow: 0 -5px 3px #ccc;
+          box-shadow: 0 -5px 3px #ccc;
+}
+
+.advantages__small {
+  width: 25%;
+}
+
+.advantages__big {
+  width: 33.3%;
+}
+
+.advantages__img {
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 991px) {
@@ -376,6 +410,9 @@ li a:hover {
   .nav__btn-active .nav__line::after {
     -webkit-transform: rotate(-35deg);
             transform: rotate(-35deg);
+  }
+  .advantages__img {
+    width: 80%;
   }
 }
 
