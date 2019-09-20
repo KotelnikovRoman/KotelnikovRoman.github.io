@@ -229,7 +229,7 @@ li a:hover {
 
 .slider__title {
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   text-align: center;
   font-family: "Courier New";
   font-size: 50px;
@@ -302,11 +302,12 @@ li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 40px;
 }
 
 .advantages__shadow {
-  -webkit-box-shadow: 0 -5px 3px #ccc;
-          box-shadow: 0 -5px 3px #ccc;
+  -webkit-box-shadow: 0 -6px 10px #A5A6A5;
+          box-shadow: 0 -6px 10px #A5A6A5;
 }
 
 .advantages__small {
