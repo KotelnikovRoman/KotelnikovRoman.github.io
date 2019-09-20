@@ -3,6 +3,13 @@
   src: url("../fonts/7170.ttf");
 }
 
+@font-face {
+  font-family: 'Playfair Display';
+  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"), url("../fonts/playfairdisplaybold.woff2") format("woff2"), url("../fonts/playfairdisplaybold.woff") format("woff"), url("../fonts/playfairdisplaybold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #fff;
@@ -310,6 +317,10 @@ li a:hover {
           box-shadow: 0 -6px 10px #A5A6A5;
 }
 
+.advantages__figure {
+  position: relative;
+}
+
 .advantages__small {
   width: 25%;
 }
@@ -323,6 +334,36 @@ li a:hover {
      object-position: 50% 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.advantages__text {
+  margin-top: 20px;
+  word-spacing: 0;
+  font-size: 15px;
+}
+
+.advantages__text_bold {
+  font-weight: bold;
+}
+
+.advantages__text-slogan {
+  position: absolute;
+  bottom: 20px;
+  width: 300px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.advantages__link {
+  font-family: 'Playfair Display' serif;
+  font-weight: bold;
+  font-size: 23px;
+  color: #000;
+}
+
+.advantages__link_bold {
+  font-size: 18px;
 }
 
 @media (max-width: 991px) {

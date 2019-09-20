@@ -206,6 +206,8 @@ li a:hover
     margin-top: 40px
     &__shadow
         box-shadow: 0 -6px 10px #A5A6A5
+    &__figure
+        position: relative
     &__small
         width: 25%
     &__big
@@ -213,5 +215,26 @@ li a:hover
     &__img
         object-position: 50% 50%
         object-fit: cover
+    &__text
+        margin-top: 20px
+        word-spacing: 0
+        font-size: 15px
+        &_bold
+            font-weight: bold
+        &-slogan
+            position: absolute
+            bottom: 20px
+            width: 300px
+            padding-right: 10px
+            padding-left: 10px
+            background-color: rgba(255, 255, 255, 0.5)
+    &__link
+        font-family: 'Playfair Display' serif
+        font-weight: bold
+        font-size: 23px
+        color: #000
+            
+        &_bold
+            font-size: 18px
 
 @import "phone"

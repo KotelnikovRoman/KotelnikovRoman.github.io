@@ -2,3 +2,13 @@
     font-family: "'Courier New'";
     src: url('../fonts/7170.ttf');
 }
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+    url('../fonts/playfairdisplaybold.woff2') format('woff2'),
+    url('../fonts/playfairdisplaybold.woff') format('woff'),
+    url('../fonts/playfairdisplaybold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
