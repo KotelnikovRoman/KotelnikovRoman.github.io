@@ -339,16 +339,13 @@ li a:hover {
 .advantages__text {
   margin-top: 20px;
   word-spacing: 0;
-  font-size: 15px;
-}
-
-.advantages__text_bold {
+  font-size: 18px;
   font-weight: bold;
 }
 
 .advantages__text-slogan {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   width: 300px;
   padding-right: 10px;
   padding-left: 10px;
@@ -362,7 +359,13 @@ li a:hover {
   color: #000;
 }
 
-.advantages__link_bold {
+.advantages__link:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+.advantages__link:hover_bold {
   font-size: 18px;
 }
 
@@ -453,8 +456,15 @@ li a:hover {
     -webkit-transform: rotate(-35deg);
             transform: rotate(-35deg);
   }
+  .advantages__small {
+    width: 30%;
+    margin-left: 10px;
+  }
   .advantages__img {
     width: 80%;
+  }
+  .advantages__text {
+    text-align: center;
   }
 }
 
