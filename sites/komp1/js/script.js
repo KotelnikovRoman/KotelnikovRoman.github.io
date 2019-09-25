@@ -1,5 +1,8 @@
-$('.nav__btn').on('click', function(event){
-    $(this).toggleClass('nav__btn-active');
-    $('.nav__list').toggle('slow');
-    return false;
+$(function() {
+    //скрывает и показывает меню
+    $('.nav__btn').on('click', function(event){
+        $(this).toggleClass('nav__btn-active');
+        $('.nav__list').toggle('slow');
+        return false;
+    });
 });

@@ -9,14 +9,17 @@ body
 ul
     list-style: none
 
+.d-flex
+    &_wrap
+        justify-content: center
+        flex-wrap: wrap
+
 li a
     text-decoration: none
 li a:hover
     text-decoration: none
     color: #000
     cursor: pointer
-.container
-    //background: green
 
 .small
     text-transform: lowercase
@@ -27,7 +30,6 @@ li a:hover
 .logo
     width: 70%
     display: flex
-    //background: yellow
     &__img
         width: 69px
         height: 79px
@@ -215,18 +217,12 @@ li a:hover
     &__img
         object-position: 50% 50%
         object-fit: cover
-    &__text
+    /*&__text
         margin-top: 20px
         word-spacing: 0
         font-size: 18px
-        font-weight: bold
-        &-slogan
-            position: absolute
-            bottom: 40px
-            width: 300px
-            padding-right: 10px
-            padding-left: 10px
-            background-color: rgba(255, 255, 255, 0.5)
+        font-weight: bold*/
+        
     &__link
         font-family: 'Playfair Display' serif
         font-weight: bold
@@ -239,5 +235,39 @@ li a:hover
             
         &_bold
             font-size: 18px
+
+.figure
+    &__slide
+        width: 80%
+        position: relative
+    &__slogan
+        position: absolute
+        bottom: 0
+        width: 295px
+        padding-right: 10px
+        padding-left: 10px
+        background-color: rgba(255, 255, 255, 0.5)
+        //border: 1px solid black
+    &__link
+        color: #000
+        font-family: 'Playfair Display' serif
+        font-weight: 700
+        font-size: 23px
+    &__link:hover
+        text-decoration: none
+        cursor: pointer
+        color: #000
+    &__text
+        margin-top: 20px
+        word-spacing: 0
+        font-size: 15px
+        &_big
+            font-size: 18px
+    .text_1
+        flex: 35%
+    .text_2
+        flex: 75%
+    
+    
 
 @import "phone"
