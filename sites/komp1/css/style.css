@@ -428,6 +428,10 @@ li a:hover {
   color: #979391;
 }
 
+.text__big {
+  font-size: 22px;
+}
+
 @media (min-width: 1200px) {
   .advantages__text-slogan {
     bottom: 45px;
