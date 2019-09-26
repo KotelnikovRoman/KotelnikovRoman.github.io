@@ -394,25 +394,38 @@ li a:hover {
 }
 
 .figure__text {
-  margin-top: 20px;
   word-spacing: 0;
+  word-wrap: break-word;
   font-size: 15px;
+}
+
+.figure__text_bottom {
+  margin-top: 40px;
 }
 
 .figure__text_big {
   font-size: 18px;
 }
 
-.figure .text_1 {
+.text__1 {
+  font-size: 18px;
   -webkit-box-flex: 35%;
       -ms-flex: 35%;
           flex: 35%;
 }
 
-.figure .text_2 {
+.text__2 {
   -webkit-box-flex: 75%;
       -ms-flex: 75%;
           flex: 75%;
+}
+
+.text__extra-large {
+  font-size: 36px;
+}
+
+.text__color {
+  color: #979391;
 }
 
 @media (min-width: 1200px) {
