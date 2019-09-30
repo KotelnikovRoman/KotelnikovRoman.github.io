@@ -28,6 +28,10 @@
         &__link
             font-size: 1em
 
+    .block
+        &__big
+            width: 50%
+
     .figure
         //..
 
@@ -110,6 +114,21 @@
             text-align: center
             &-slogan
                 width: 80%
+
+    .block
+        &__big
+            //..
+
+    .figure
+        width: 100%
+        &__slide
+            display: flex
+            justify-content: center
+
+    .text
+        &__1,
+        &__2
+            flex: 1
 
 @media (max-width: 576px)
     .header

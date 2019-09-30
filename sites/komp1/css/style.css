@@ -313,16 +313,31 @@ li a:hover {
   color: #EA5848;
 }
 
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.block__small {
+  width: 25%;
+}
+
+.block__big {
+  width: 33.3%;
+}
+
+.block__text {
+  font-family: 'Courier New';
+  width: 100%;
+}
+
 .advantages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
-  /*&__text
-        margin-top: 20px
-        word-spacing: 0
-        font-size: 18px
-        font-weight: bold*/
 }
 
 .advantages__shadow {
@@ -432,6 +447,11 @@ li a:hover {
   font-size: 22px;
 }
 
+.text__gread {
+  font-weight: bold;
+  font-size: 30px;
+}
+
 @media (min-width: 1200px) {
   .advantages__text-slogan {
     bottom: 45px;
@@ -460,6 +480,9 @@ li a:hover {
   }
   .advantages__link {
     font-size: 1em;
+  }
+  .block__big {
+    width: 50%;
   }
 }
 
@@ -563,6 +586,22 @@ li a:hover {
   }
   .advantages__text-slogan {
     width: 80%;
+  }
+  .figure {
+    width: 100%;
+  }
+  .figure__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .text__1, .text__2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 

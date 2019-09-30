@@ -45,7 +45,6 @@ li a:hover
 .telephone
     width: 30%
     text-align: right
-    //background: green
     &__text
         font-family: Arial, helvetica, sans-serif
         font-size: 34px
@@ -150,12 +149,10 @@ li a:hover
         font-weight: bold
         text-align: center
         word-wrap: break-word
-        //background-color: #cccccc
 
 .slider
     &__slide
         position: relative
-        //background-color: #ccc
     &__title
         padding-top: 30px
         padding-bottom: 0
@@ -203,6 +200,17 @@ li a:hover
         padding-left: 5px
         color: #EA5848
 
+.block
+    display: flex
+    margin-top: 40px
+    &__small
+        width: 25%
+    &__big
+        width: 33.3%
+    &__text
+        font-family: 'Courier New'
+        width: 100%
+
 .advantages
     display: flex
     margin-top: 40px
@@ -217,12 +225,6 @@ li a:hover
     &__img
         object-position: 50% 50%
         object-fit: cover
-    /*&__text
-        margin-top: 20px
-        word-spacing: 0
-        font-size: 18px
-        font-weight: bold*/
-        
     &__link
         font-family: 'Playfair Display' serif
         font-weight: bold
@@ -232,7 +234,6 @@ li a:hover
         text-decoration: none
         cursor: pointer
         color: #000
-            
         &_bold
             font-size: 18px
 
@@ -247,7 +248,6 @@ li a:hover
         padding-right: 10px
         padding-left: 10px
         background-color: rgba(255, 255, 255, 0.5)
-        //border: 1px solid black
     &__link
         color: #000
         font-family: 'Playfair Display' serif
@@ -277,6 +277,9 @@ li a:hover
         color: #979391
     &__big
         font-size: 22px
+    &__gread
+        font-weight: bold
+        font-size: 30px
     
 
 @import "phone"
