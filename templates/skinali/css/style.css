@@ -872,13 +872,14 @@ a {
       flex-wrap: wrap;
 }
 
-.factory__text {
+.factory-block__text {
   margin-left: 70px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  font-size: 20px;
 }
 
-.factory__image {
-  margin: 20px 0;
+.factory-block__image {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
