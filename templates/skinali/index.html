@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <!--<link rel="stylesheet" href="../css/normalize.css">-->
     <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/twentytwenty.css">-->
     <title>Skinali</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="menu">
             <div class="container">
                 <nav class="menu__nav">
-                    <a href="#" class="menu__link">Главная</a>
-                    <a href="#" class="menu__link">Продукция</a>
-                    <a href="#" class="menu__link">Каталог</a>
-                    <a href="#" class="menu__link">Примеры работ</a>
-                    <a href="#" class="menu__link">Примерка изображений</a>
-                    <a href="#" class="menu__link">Стоимость диллерам</a>
-                    <a href="#" class="menu__link">О скинали</a>
+                    <a href="#home" class="menu__link">Главная</a>
+                    <a href="#features" class="menu__link">Преимущества</a>
+                    <a href="#catalog" class="menu__link">Каталог</a>
+                    <a href="#price" class="menu__link">Примеры работ</a>
+                    <a href="#before" class="menu__link">Примерка изображений</a>
+                    <a href="#price" class="menu__link">Стоимость диллерам</a>
+                    <a href="#blog" class="menu__link">О скинали</a>
                 </nav>
                 <!-- /.menu__nav -->
             </div>
@@ -47,7 +48,7 @@
                         <a class="navbar__phone" href="tel:+74991234567">+7-499-123-45-67</a>
                         <a class="navbar__email navbar__small-text" href="mailto:info@mail.ru">info@mail.ru</a>
                     </div>
-                    <button class="button-o navbar__button">получить консультацию</button>
+                    <a href="#offer" class="button-o navbar__button">получить консультацию</a>
                 </div>
                 <!-- /.navbar-wrap -->
             </div>
@@ -62,7 +63,7 @@
                     на скинали
                 </h1>
                 <span class="hero__subtitle">от 3000 р/км2</span>
-                <button class="button hero__button">заказать скинали</button>
+                <a href="#offer" class="button hero__button">заказать скинали</a>
             </div>
             <!-- /.container -->
         </div>
@@ -71,7 +72,7 @@
     <!-- /.header -->
 
     <main>
-        <section class="offer bg-secondary">
+        <section class="offer bg-secondary" id="offer">
             <div class="container">
                 <div class="offer__block offer-block offer-block_calc-bg">
                     <h2 class="offer__title">Оставьте заявку на расчёт</h2>
@@ -79,18 +80,25 @@
                     <form action="#" class="form offer__form">
                         <div class="form__row">
                             <div class="form__group">
-                                <label for="" class="form__label">Вид стекла</label> <!-- /.form__label -->
-                                <input type="text" class="input form__input">
+                                <label for="select-type" class="form__label">Вид стекла</label>
+                                <input type="hidden" name="type" id="select-type" value="С печатью">
+                                <div class="select form__select">
+                                    <div class="select_checked">с печатью</div>
+                                    <ul class="select__dropdown">
+                                        <li class="select__option" data-value="с печатью">с печатью</li>
+                                        <li class="select__option" data-value="без печати">без печати</li>
+                                    </ul>
+                                </div>
                             </div>
                             <!-- /.form__group -->
                             <div class="form__group">
                                 <label for="" class="form__label">Ширина, см</label> <!-- /.form__label -->
-                                <input type="text" class="input form__input">
+                                <input type="number" class="input form__input">
                             </div>
                             <!-- /.form__group -->
                             <div class="form__group">
                                 <label for="" class="form__label">Высота, см</label> <!-- /.form__label -->
-                                <input type="text" class="input form__input">
+                                <input type="number" class="input form__input">
                             </div>
                             <!-- /.form__group -->
                         </div>
@@ -131,7 +139,7 @@
             <!-- /.container -->
         </section>
         <!-- /.offer -->
-        <section class="features section">
+        <section class="features section" id="features">
             <div class="container">
                 <h2 class="section-title section__title">Наши преимущества</h2>
                 <div class="features-block">
@@ -177,7 +185,7 @@
             <!-- /.container -->
         </section>
         <!-- /.features section -->
-        <section class="section catalog">
+        <section class="section catalog" id="catalog">
             <div class="container">
                 <h2 class="section-title section__title">Каталог скинали</h2>
                 <div class="catalog-block">
@@ -298,7 +306,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section catalog -->
-        <section class="section blog">
+        <section class="section blog" id="blog">
             <div class="container">
                 <div class="blog__heading">
                     <h3 class="blog__title">Полезное или что важно знать о скинали...</h3>
@@ -348,7 +356,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section blog-list -->
-        <section class="section price">
+        <section class="section price" id="price">
             <div class="container">
                 <h2 class="section-title section__title">Цены и виды скинали</h2>
                 <div class="price-block">
@@ -586,6 +594,47 @@
             <!-- /.container -->
         </section>
         <!-- /.section steps -->
+        <section class="section before" id="before">
+            <div class="container">
+                <h2 class="section-title section__title">До и после</h2>
+                <div class="before-slider-wrap">
+                    <div class="before-slider">
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/sample-before.png" alt="">
+                                <img src="img/sample-after.png" alt="">
+                            </div>
+                        </div>
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/sample-before.png" alt="">
+                                <img src="img/sample-after.png" alt="">
+                            </div>
+                        </div>
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/sample-before.png" alt="">
+                                <img src="img/sample-after.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.before-slider -->
+                    <div class="before-slider-arrows">
+                        <button class="arrow arrow-left">
+                            <img src="img/arrow_left_copy.png" alt="">
+                        </button>
+                        <button class="arrow arrow-right">
+                            <img src="img/arrow_right_copy.png" alt="">
+                        </button>
+                    </div>
+                    <!-- /.before-slider-arrows -->
+                </div>
+                <!-- /.before-slider-wrap -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section before -->
+
         <section class="section reviews">
             <div class="container">
                 <h2 class="section-title section__title">
@@ -646,7 +695,7 @@
                             </div>
                             <!-- /.form__group -->
                             <div class="form__group">
-                                <input type="text" class="input form__input" placeholder="Ваш телефон">
+                                <input type="tel" class="input form__input" placeholder="Ваш телефон">
                             </div>
                             <!-- /.form__group -->
                             <div class="form__group">
@@ -738,7 +787,7 @@
         </section>
         <!-- /.section contacts -->
         <div class="map" id="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5a22f1db9fd2fdb2591e583261cfa235662851efa48fffd76ef84d8504acf542&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>
+            
         </div>
         <!-- /.map #map -->
         <section class="section questions">
@@ -774,13 +823,13 @@
                     <a href="#" class="footer__mail">email@mail.ru</a>
                     <div class="footer-social">
                         <a href="" class="footer-social__link">
-                            <img src="img/vk.png" alt="vk">
+                            <img class="footer-social__img" src="img/vk.png" alt="vk">
                         </a>
                         <a href="" class="footer-social__link">
-                            <img src="img/facebook.png" alt="facebook">
+                            <img class="footer-social__img" src="img/facebook.png" alt="facebook">
                         </a>
                         <a href="" class="footer-social__link">
-                            <img src="img/twitter.png" alt="twitter">
+                            <img class="footer-social__img" src="img/twitter.png" alt="twitter">
                         </a>
                     </div>
                 </div>
@@ -793,5 +842,12 @@
     <!-- /.footer -->
     <!-- подключение виджетов соц. сетей -->
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=2066"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <!-- слайдер -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
