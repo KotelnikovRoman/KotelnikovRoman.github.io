@@ -1,0 +1,530 @@
+@import "fonts"
+    
+*,
+*:before,
+*:after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body 
+    font-family: 'Raleway', sans-serif
+    font-size: 14px
+    -webkit-font-smoothing: antialiased
+    color: #6c7279
+    background-color: #fff
+
+a 
+    text-decoration: none
+
+// Дополнительные шрифты
+//font-family: 'Open Sans', sans-serif
+
+.container
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 15px
+
+// Header
+//======================================
+
+.header
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1000
+    width: 100%
+    height: 100px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 35px 0
+        border-bottom: 1px solid #505269
+
+.header.fixed
+    position: fixed
+    height: auto
+    background-color: #2a2e48
+
+.header.fixed .header__inner
+    padding-top: 15px
+    padding-bottom: 15px
+    border-bottom: 0
+
+// Nav
+//========================================
+
+.nav
+    display: flex
+    font-size: 13px
+    font-weight: bold
+    text-transform: uppercase
+    &__link
+        margin-left: 50px
+        opacity: 0.75
+        color: #ffffff
+        transition: opacity .3s linear
+        &:first-child
+            margin-left: 0
+        &:hover
+            opacity: 1
+
+.burger
+    display: none
+    padding: 15px 0
+    background: none
+    border: none
+    outline: none
+    cursor: pointer
+    &__item
+        display: block
+        width: 30px
+        height: 3px
+        background-color: #fff
+        color: transparent
+        position: relative
+        &::before,
+        &::after
+            content: ''
+            width: 100%
+            height: 100%
+            background-color: #fff
+            position: absolute
+            left: 0
+            z-index: 1
+        &::before
+            top: -8px
+        &::after
+            bottom: -8px
+        
+            
+
+
+//Intro
+//====================================
+
+// попытка добавить cover в background вызовет ошибку
+.intro
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 750px
+    padding-top: 100px
+    background: #2a2e48 url("../img/intro.jpg") center no-repeat
+    background-size: cover
+    &__inner
+        width: 100%
+        max-width: 970px
+        margin: 0 auto
+        text-align: center
+    &__title
+        margin: 0 0 40px
+        font-family: 'Open Sans', sans-serif
+        font-size: 65px
+        font-weight: 700
+        line-height: 1.1
+        text-transform: uppercase
+        color: #ffffff
+    &__subtitle
+        margin-bottom: 65px
+        font-size: 22px
+        font-weight: bold
+        color: #ffffff
+        line-height: 1.5
+
+.btn
+    display: inline-block
+    padding: 18px 53px
+    vertical-align: top
+    font-family: inherit
+    font-size: 13px
+    font-weight: 600
+    text-align: center
+    text-transform: uppercase
+    line-height: 0.9
+    color: #ffffff
+    border-radius: 3px
+    border: 0
+    transition: background .1s linear
+    &-red
+        background-color: #e84545
+        &:hover
+            background-color: #dd3434
+    &-long
+        min-width: 280px
+
+//features..........................
+.feature
+    display: flex
+    flex-wrap: wrap
+    margin: 95px 0
+    &__item
+        width: 33.33333%
+        padding: 0 40px
+        margin: 25px 0
+        text-align: center
+    &__icon
+        margin-bottom: 25px
+    &__title
+        margin-bottom: 20px
+        font-size: 14px
+        color: #2d3033
+        font-weight: 700
+        text-transform: uppercase
+    &__text
+        line-height: 1.5
+        color: #6c7279
+
+//works...............................
+.works
+    display: flex
+    flex-wrap: wrap
+    &__item
+        width: 25%
+        height: 350px
+        position: relative
+        overflow: hidden
+        &:hover .works__content
+            opacity: 1
+    &__photo
+        min-width: 100%
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 1
+        transform: translate3d(-50%, -50%, 0)
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 2
+        width: 100%
+        height: 100%
+        text-align: center
+        color: #ffffff
+        background: rgba(232, 69, 69, .9)
+        opacity: 0
+        transition: opacity .2s linear
+    &__title
+        text-transform: uppercase
+        font-weight: 700
+
+//team....................................
+.team
+    margin: 100px 0 70px
+    &__inner
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -15px
+    &__item
+        width: 25%
+        margin-bottom: 30px
+        padding: 0 15px
+    &__photo
+        display: block
+        max-width: 100%
+        height: auto
+        margin-bottom: 20px
+    &__name
+        margin-bottom: 8px
+        font-size: 22px
+        color: #2d3033
+    &__prof
+        margin-bottom: 25px
+        font-size: 13px
+        color: #e84545
+        text-transform: uppercase
+    &__text
+        margin-bottom: 20px
+        line-height: 1.5
+        color: #6c7270
+
+//social......................................
+.social
+    display: flex
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        margin-right: 4px
+        background-color: #fff
+        border: 1px solid #e8ecee
+        transition: background .1s linear
+        &:hover
+            background-color: #e8ecee
+        &:hover .social__icon
+            fill: #000000
+    &__icon
+        display: block
+        height: 18px
+        fill: #c6cacc
+        transition: fill .1s linear
+    &_footer
+        justify-content: center
+    &_footer .social__item
+        background-color: transparent 
+        border-width: 2px
+        border-color: #fff
+        border-radius: 2px
+        &:hover
+            background-color: #ffffff
+    &_footer .social__icon
+        fill: #fff
+
+
+//Reviews....................................
+.reviews
+    overflow: hidden
+    background-color: #53354a
+    &__slider
+        height: 500px
+        overflow: hidden
+    &__slider.slick-initialized
+        height: auto
+    &__item
+        display: flex
+        flex-wrap: wrap
+    &__photo
+        width: 50%
+        height: 500px
+        position: relative
+    &__img
+        position: absolute
+        top: 50%
+        right: 0
+        z-index: 1
+        transform: translateY(-50%)
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 50%
+        padding-left: 80px
+    &__text
+        margin-bottom: 20px
+        font-family: 'Cardo', sans-serif
+        font-style: italic
+        font-size: 36px
+        line-height: 1.2
+        color: #f4f2f3
+        
+    &__author
+        font-weight: 700
+        font-style: 13px
+        text-transform: uppercase
+        line-height: .9
+        color: #f4f2f3
+
+.slick-dots
+    display: flex
+    justify-content: center
+    position: absolute
+    bottom: 0
+    right: 0
+    z-index: 2
+
+    width: 50%
+    margin: 0
+    padding: 0 0 10px
+
+    list-style: none
+    li
+        margin: 0 5px
+
+    button
+        width: 10px
+        height: 10px
+        padding: 0
+
+        font-size: 0   
+        color: transparent
+
+        background-color: #ffffff
+        opacity: .5
+        border: 0
+        border-radius: 50%
+
+        cursor: pointer
+
+    button:focus
+        outline: 0
+
+    .slick-active
+        button
+            opacity: 1
+
+//Download.................................
+.download
+    margin: 90px 0
+    text-align: center
+    &__title
+        margin-bottom: 10px
+        font-size: 28px
+        color: #2d3033
+        font-weight: 300
+    &__text
+        margin-bottom: 30px
+        font-size: 13px
+        color: #2d3033
+        font-weight: 700
+        text-transform: uppercase
+
+//footer...............................
+.footer
+    background-color: #3a3e64
+    &__inner
+        padding: 70px 0
+        display: flex
+        flex-wrap: wrap
+    &__block
+        width: 33.33333%
+        padding: 0 15px
+        text-align: center
+    &__title
+        margin-bottom: 10px
+        font-size: 14px
+        font-weight: 700
+        color: #ffffff
+        text-transform: uppercase
+    &__address
+        font-size: 14px
+        font-style: normal
+        line-height: 1.5
+        color: rgba(255, 255, 255, .5)
+    &__text
+        font-size: 14px
+        line-height: 1.5
+        color: rgba(255, 255, 255, .5)
+.copyright
+    padding: 20px 0
+    background-color: #313454
+    &__text
+        font-size: 14px
+        line-height: 1.5
+        color: #808080
+        text-align: center
+        span
+            font-weight: bold
+            color: #ffffff
+
+//media 1300
+@media (max-width: 1300px)
+    .works
+        &__item
+            width: 50%
+
+//media 991            
+@media (max-width: 991px)
+    .nav
+        display: none
+        width: 100%
+        flex-direction: column
+        position: absolute
+        top: 100%
+        right: 0
+        text-align: right
+        background-color: #31344e
+        &__link
+            padding: 9px 15px
+
+    .nav.show
+        display: flex
+
+    .burger
+        display: block
+
+    .intro
+        &__title
+            font-size: 40px
+
+    .feature
+        &__item
+            width: 50%
+
+    .team
+        &__item
+            width: 50%
+            text-align: center
+        &__photo
+            margin-left: auto
+            margin-right: auto
+    
+    .social
+        justify-content: center
+
+    .reviews
+        &__photo
+            width: 100%
+            margin: 15px 0 40px
+            overflow: hidden
+        &__content
+            width: 100%
+            padding-left: 0
+            padding-bottom: 40px
+    
+
+//media 767
+@media (max-width: 767px)
+    .intro
+        height: auto
+        padding-top: 130px
+        padding-bottom: 30px
+        &__title
+            font-size: 30px
+        &__subtitle
+            margin-bottom: 30px
+            font-size: 16px
+
+    .feature
+        margin: 40px 0
+        &__item
+            width: 100%
+            padding-left: 0
+            padding-right: 0
+
+    .works
+        &__item
+            width: 100%
+            height: 300px
+
+    .team
+        margin: 60px 0 30px
+        &__item
+            width: 100%
+    
+    .reviews
+        &__text
+            font-size: 25px
+
+    .btn-long
+        min-width: 260px
+
+    .download
+        margin: 50px 0
+        &__title
+            font-size: 24px
+
+    .footer
+        &__inner
+            padding: 30px 0
+        &__block
+            width: 100%
+            margin-bottom: 30px
+            padding-left: 0
+            padding-right: 0
+            &:last-child
+                margin-bottom: 0
+
+@media (max-width: 414px)
+    .reviews
+        &__img
+            right: -100px
+
+    
