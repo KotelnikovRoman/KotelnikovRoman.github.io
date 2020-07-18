@@ -13,7 +13,6 @@ a {
   text-decoration: none;
 }
 
-/* wrapper */
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +81,7 @@ a {
 }
 
 .work__img {
+  margin-left: 15px;
   height: 350px;
 }
 
