@@ -5,6 +5,12 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  background-color: #b8b8b8;
+}
+
 ul li {
   list-style: none;
 }
@@ -80,9 +86,21 @@ a {
   text-align: center;
 }
 
-.work__img {
-  margin-left: 15px;
+.work__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work__img--template {
   height: 350px;
+}
+
+.work__img--programm {
+  width: 100px;
 }
 
 .footer {

@@ -5,6 +5,10 @@ $menu_li: rgba(160, 160, 160, .3)
     padding: 0
     box-sizing: border-box
 
+body
+    font-family: 'Oswald', sans-serif
+    background-color: #b8b8b8
+
 ul
     li
         list-style: none
@@ -59,9 +63,14 @@ a
         text-align: center
 
 .work
+    &__row
+        display: flex
+        justify-content: space-between
     &__img
-        margin-left: 15px
-        height: 350px
+        &--template
+            height: 350px
+        &--programm
+            width: 100px
 
 .footer
     height: 40px
