@@ -1,0 +1,200 @@
+
+
+*, *:after, *:before
+    box-sizing: border-box
+    
+body
+    background: #fff
+    margin: 0
+    font-family: 'Roboto', sans-serif
+    color: #272727
+    padding-top: 60px
+
+.container
+    max-width: 1107px
+    margin: 0 auto
+
+.header
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 99
+    width: 100%
+    padding: 14px 0
+    background-color: #f4f4f4
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+.logo
+    font-size: 16px
+    font-weight: 700
+    color: #95989a
+
+.nav
+    flex-basis: 80%
+    &__link
+        font-size: 12px
+        color: #95989a
+        text-decoration: none
+        margin-right: 20px
+
+.login
+    font-size: 12px
+    color: #95989a
+    text-decoration: none
+    text-transform: uppercase
+
+.tabs
+    display: flex
+    margin-bottom: 20px
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid #eaeaea
+    &__logo
+        font-size: 20px
+        color: #95989a
+    &-menu
+        list-style: none
+        padding: 0
+        display: flex
+    &__item
+        margin-left: 15px
+        position: relative
+    &__item:after
+        position: absolute
+        bottom: -18px
+        left: 0
+        content: ''
+        display: block
+        height: 4px
+        width: 0%
+        transition: width 0.2s
+        background: #fcde29
+    &__item:hover
+        cursor: pointer
+    &__item:hover:after
+        width: 100%
+
+.tabs-content
+    margin-bottom: 65px
+    padding-top: 40px
+    padding-left: 45px
+    padding-right: 45px
+    padding-bottom: 43px
+    background: #f2f4ff url('../img/banka.png') no-repeat top right 135px
+    border-radius: 10px
+    &__title
+        font-size: 36px
+    &__text
+        font-size: 18px
+        max-width: 320px
+        margin-bottom: 90px
+
+.button
+    padding: 16px 33px
+    font-weight: 700
+    background-color: #fcde29
+    border-radius: 6px
+    border: none
+    &-block
+        display: flex
+        justify-content: flex-end
+
+.section
+    &-title
+        font-size: 30px
+        font-weight: 400
+        text-align: center
+    &-subtitle
+        display: block
+        text-align: center
+        font-size: 16px
+        margin-bottom: 32px
+    &__title
+        margin-bottom: 30px
+    &__card
+        margin-bottom: 40px
+        flex-basis: 28%
+
+.card
+    background-color: #f2f4ff
+    padding: 23px
+    border-radius: 10px
+    &__text
+        max-width: 490px
+        font-size: 16px
+    &_bottom
+        background-image: url('../img/money.png')
+        background-repeat: no-repeat
+        background-position: center right 80px
+        margin-bottom: 40px
+    &-wrap
+        display: flex
+        justify-content: space-between
+
+.best
+    &__title
+        margin-bottom: 10px
+    &-card
+        position: relative
+        width: 240px
+        height: 260px
+        padding: 0px
+        &__img
+            width: 80%
+            height: 80%
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            &_left
+                height: 90%
+                left: 0
+                transform: translateX(0)
+        &__text
+            max-width: 200px
+            margin: auto
+            text-align: center
+            margin-top: 20px
+
+.delivery
+    padding-top: 60px
+    padding-bottom: 100px
+    &__form
+        margin-top: 60px
+
+.input
+    width: 100%
+    padding: 20px
+    background-color: #f7f8ff
+    border: none
+    border-radius: 7px
+    font-size: 16px
+
+.form
+    max-width: 600px
+    margin: auto
+    &__input
+        margin-bottom: 30px
+
+.row
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.col-100
+    flex-basis: 100%
+.col-50
+    flex-basis: 49%
+
+.footer
+    padding: 60px 0
+    background-color: #f7f7f7
+    &__text
+        max-width: 670px
+        margin: auto
+        text-align: center
+
+@import "iphone"

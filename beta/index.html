@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Портфолио Котельникова Романа</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <img src="img/kotelnikov.jpg" alt="" class="header__img" />
+          <h1 class="header__title">Котельников Роман</h1>
+          <p class="header__text">веб-разработчик</p>
+        </div>
+        <!-- /.header__logo -->
+        <nav class="nav">
+          <h2 class="header__title">Мои навыки</h2>
+          <ul class="nav__menu" onclick="nav_click()">
+            <li class="nav__li nav__li-active">
+              <a href="#" class="nav__link" id="nav__about">
+                обо мне
+              </a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__link" id="nav__templates">
+                вёрстка шаблонов
+              </a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__link" id="nav__javascript">
+                javascript
+              </a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__link" id="nav__php">
+                php
+              </a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__link" id="nav__python">
+                python
+              </a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__link" id="nav__cpp">
+                C++
+              </a>
+            </li>
+          </ul>
+          <!-- /.nav__menu -->
+        </nav>
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <main class="main">
+      <div class="container">
+        <div class="main__block main__block-active" id="about">
+          <div class="container">
+            <h2 class="main__title">Обо мне</h2>
+            <p>
+              Осваиваю html, css, javascript, php, python, C++.
+            </p>
+            <p>
+              html, css, sass, scss: <br>
+              При вёрстке использую препроцессоры sass, scss
+            </p>
+            <p>
+              javascript:<br>
+              Создаю калькулятор на нативном javascript
+              <a href="https://kotelnikovroman.github.io/calculator/">калькулятор</a> (Находится в разработке)
+            </p>
+            <p>
+              php:<br>
+              С помощью php создаю небольшие программы для динамики веб-страниц
+            </p>
+            <p>
+              python: <br>
+              По уроку, создал приложение отвечающее на несколько вопросов (привет, как дела, что делаешь)
+              А так же зупускающее программы на компьютере
+              Так же добавил интерфейс с помощью библиотеки tkinter
+              <a href="https://github.com/KotelnikovRoman/nadya.git">программа</a> (Находится в разработке)
+            </p>
+            <p>
+              C++: <br>
+              C++ изучаю с заделом на будущее для игр или робататехнике, сейчас осваиваю библиотеку TXLibrery
+            </p>
+            <p>
+              Создавал 2 сайта на заказ с помощью cms joomla и wordpress <br>
+              Для движка joomla сверстал шаблон и по присланному макету, посадил его на joomla и произвёл настройки <br>
+              Для wordpress, была выбрана уже готовая тема, которую подключил настроил и добавил виджет для видео <br>
+            </p>
+            <p>
+              Мои контакты: <br>
+              kotelnikovrm@gmail.com <br>
+              вконтакте https://vk.com/kotelnikovroma <br>
+              linkedin https://www.linkedin.com/in/romankotelnikov/ <br>
+            </p>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /about -->
+
+        <div class="main__block work" id="templates">
+          <div class="container">
+            <h2 class="main__title">вёрстка шаблонов</h2>
+            <div class="work__row">
+              <a href="templates/activebox/" class="work__link">
+                <img src="img/ActiveBox.png" alt="" class="work__img--template">
+              </a>
+              <a href="templates/golden/" class="work__link">
+                <img src="img/Golden.png" alt="" class="work__img--template">
+              </a>
+              <a href="templates/banka/" class="work__link">
+                <img src="img/banka.png" alt="" class="work__img--template">
+              </a>
+              <a href="templates/skinali/" class="work__link">
+                <img src="img/skinali.png" alt="" class="work__img--template">
+              </a>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /templates -->
+
+        <div class="main__block" id="javascript">
+          <div class="container">
+            <h2 class="main__title">проекты на javascrip</h2>
+            <div class="work__row">
+              <a href="programms/js/clock" class="work__link">
+                <img src="programms/js/clock/clock.png" alt="" class="work__img--programm">
+              </a>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /javascript -->
+
+        <div class="main__block" id="php">
+          <div class="container">
+            <h2 class="main__title">проекты на php</h2>
+            <div class="work__row">
+              <a href="programms/php/counter" class="work__link">
+                <img src="programms/php/counter/counter.png" alt="" class="work__img--programm">
+              </a>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /php -->
+
+        <div class="main__block" id="python">
+          <div class="container">
+            <h2 class="main__title">проекты на python</h2>
+            <div class="work__row">
+              <a href="programms/py/duck_hunt/shooting.exe" class="work__link">
+                <img src="programms/js/clock/clock.png" alt="" class="work__img--programm">
+              </a>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /python -->
+
+        <div class="main__block" id="cpp">
+          <div class="container">
+            <h2 class="main__title">проекты на C++</h2>
+            <div class="work__row">
+              <a href="programms/js/clock" class="work__link">
+                <img src="programms/js/clock/clock.png" alt="" class="work__img--programm">
+              </a>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /cpp -->
+      </div>
+      <!-- /.container -->
+    </main>
+    <!-- /.main -->
+  </div>
+  <!-- /.wrapper -->
+  <footer class="footer">
+    <div class="container"></div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+</body>
+<script src="js/script.js"></script>
+
+</html>
