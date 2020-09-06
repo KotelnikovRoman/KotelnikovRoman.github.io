@@ -7,7 +7,7 @@ $menu_li: rgba(160, 160, 160, .3)
 
 body
     font-family: 'Oswald', sans-serif
-    background-color: #b8b8b8
+    //background-color: #b8b8b8
 
 ul
     li
@@ -16,11 +16,19 @@ ul
 a
     text-decoration: none
 
+.container
+    &__sidebar
+        //background-color: #fff
+        border-bottom-right-radius: 10px
+        border-bottom-left-radius: 10px
+        box-shadow: inset -10px -10px 20px -2px rgba(0,0,0,0.27)
+
 .wrapper
     display: flex
     width: 960px
     height: 100vh
     margin: 0 auto
+    //background-color: #fff
 
 
 .header
@@ -32,9 +40,17 @@ a
     &__img
         width: 80%
         margin-top: 15px
-        border-radius: 50%
+        border-radius: 20px
     &__text
+        margin-bottom: 20px
         font-size: 25px
+    &__link
+        padding: 0 15px
+        padding-bottom: 5px
+        font-size: 20px
+        color: #f9f5ed
+        text-shadow: 1px 1px 1px #000
+        box-shadow: inset -5px -5px 10px -2px rgba(0,0,0,0.27)
 
 .nav
     &__li
@@ -44,31 +60,63 @@ a
             background-color: $menu_li
         &:hover
             background-color: $menu_li
+    &__li:last-child
+        border-bottom-right-radius: 10px
+        border-bottom-left-radius: 10px
 
     &__link
         font-size: 15px
         font-weight: bold
         color: #000
 
+
+//opacity:0 Элемент полностью прозрачный (невидимый)
+//transition: 1s Скорость перехода состояния элемента
+//animation: show 3s 1  Указываем название анимации, её время и количество повторов
+//animation-fill-mode: forwards Чтобы элемент оставался в конечном состоянии анимации 
+//animation-delay: 1s Задержка перед началом 
+
 .main
     width: 75%
     height: 100vh
-    padding: 15px 5px
+    padding: 15px 10px
     &__block
         display: none
         height: 100vh
         &-active
             display: block
+            opacity: 0
+            transition: 1s
+            animation: show 3s 1
+            animation-fill-mode: forwards
+            animation-delay: 0
     &__title
         text-align: center
+
+//плавное появление
+@keyframes show
+    0%
+        opacity: 0
+
+    100%
+        opacity: 1
+
 
 .work
     &__row
         display: flex
+        flex-wrap: wrap
         justify-content: space-between
+        margin-top: 20px
+        margin-bottom: 20px
+        //background: #000
+    &__link
+        width: 30%
+        height: 100px
     &__img
         &--template
-            height: 350px
+            width: 100%
+            height: 100%
         &--programm
             width: 100px
 
@@ -78,3 +126,13 @@ a
     width: 960px
     height: 100%
     margin: 0 auto
+
+@media (max-width: 956px)
+    .wrapper
+        width: 100%
+
+    .header
+        &__title
+            font-size: 1.5em
+        &__text
+            font-size: 1.2em

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/blocks/container.sass"
+    ],
+    "names": [],
+    "file": "container.css"
+}

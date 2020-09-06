@@ -7,8 +7,6 @@
 
 body {
   font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  background-color: #b8b8b8;
 }
 
 ul li {
@@ -17,6 +15,13 @@ ul li {
 
 a {
   text-decoration: none;
+}
+
+.container__sidebar {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-shadow: inset -10px -10px 20px -2px rgba(0, 0, 0, 0.27);
+          box-shadow: inset -10px -10px 20px -2px rgba(0, 0, 0, 0.27);
 }
 
 .wrapper {
@@ -41,11 +46,22 @@ a {
 .header__img {
   width: 80%;
   margin-top: 15px;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
 .header__text {
+  margin-bottom: 20px;
   font-size: 25px;
+}
+
+.header__link {
+  padding: 0 15px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #f9f5ed;
+  text-shadow: 1px 1px 1px #000;
+  -webkit-box-shadow: inset -5px -5px 10px -2px rgba(0, 0, 0, 0.27);
+          box-shadow: inset -5px -5px 10px -2px rgba(0, 0, 0, 0.27);
 }
 
 .nav__li {
@@ -61,6 +77,11 @@ a {
   background-color: rgba(160, 160, 160, 0.3);
 }
 
+.nav__li:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
 .nav__link {
   font-size: 15px;
   font-weight: bold;
@@ -70,7 +91,7 @@ a {
 .main {
   width: 75%;
   height: 100vh;
-  padding: 15px 5px;
+  padding: 15px 10px;
 }
 
 .main__block {
@@ -80,23 +101,60 @@ a {
 
 .main__block-active {
   display: block;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: show 3s 1;
+          animation: show 3s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
 }
 
 .main__title {
   text-align: center;
 }
 
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .work__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.work__link {
+  width: 30%;
+  height: 100px;
 }
 
 .work__img--template {
-  height: 350px;
+  width: 100%;
+  height: 100%;
 }
 
 .work__img--programm {
@@ -111,5 +169,17 @@ a {
   width: 960px;
   height: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 956px) {
+  .wrapper {
+    width: 100%;
+  }
+  .header__title {
+    font-size: 1.5em;
+  }
+  .header__text {
+    font-size: 1.2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
