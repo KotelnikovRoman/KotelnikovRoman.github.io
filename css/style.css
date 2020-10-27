@@ -22,6 +22,10 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+.container {
+  width: 100%;
+}
+
 .container__sidebar {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -171,6 +175,20 @@ h1, h2, h3, h4 {
 .work__img--template, .work__img--programm {
   width: 100%;
   height: 100%;
+}
+
+.task {
+  width: 100%;
+}
+
+.task__img {
+  width: 100%;
+}
+
+.task__code {
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .footer {

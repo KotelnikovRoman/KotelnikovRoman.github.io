@@ -2,6 +2,8 @@ let active = 0;
 const blocks = document.querySelectorAll(".main__block");
 const menu_li = document.querySelectorAll(".nav__li");
 
+const code = document.querySelector(".task__code");
+
 function nav_click(e) {
   blocks[active].classList.remove("main__block-active");
   menu_li[active].classList.remove("nav__li-active");
@@ -19,4 +21,15 @@ function nav_click(e) {
 
   blocks[active].classList.add("main__block-active");
   menu_li[active].classList.add("nav__li-active");
+}
+
+var flag = false;
+function show_hide() {
+  flag = !flag;
+  if (flag) {
+    code.style.display = "block";
+  }
+  else {
+    code.style.display = "none";
+  }
 }

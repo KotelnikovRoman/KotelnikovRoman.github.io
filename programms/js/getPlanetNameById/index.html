@@ -15,21 +15,17 @@
                 <h1 class="task__title">Get planet name by id</h1>
                 <h2 class="task__subtitle">задача c codewars (уровень 8kyu)</h2>
                 <p class="task__text">Найти планету по её номеру в солнечной системе</p>
-                <p class="task__text">Example: get_planet_name(3) => "Земля"</p>
+                <p class="task__text">Example: getPlanetName(3) => "Земля"</p>
                 <img src="../../imgs/sol-system.png" alt="солнечная система" class="task__img">
                 <button class="task__button" onclick="show_hide()">решение</button>
                 <br>
                 <code class="task__code">
-                    #include &lsaquo;iostream&rsaquo; <br>
-                    using namespace std; <br>
-                    const char* planets[8] = { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus",
-                    "Neptune"}; <br>
-                    string get_planet_name(int id) { <br>
-                    return planets[id - 1]; <br>
-                    }
+                    function getPlanetName(id) { <br>
+                        return ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'][id - 1]; <br>
+                    } <br>
                 </code>
                 <p class="task__text">
-                    решение на: <a href="../../js/getPlanetNameById">js</a>, <a href="">python</a>
+                    решение на: <a href="../../cpp/getPlanetNameById">C++</a>, <a href="">python</a>
                 </p>
             </div>
         </div>
