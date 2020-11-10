@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,UAAU;EACN,WAAW,EAAE,sBAAsB;EACnC,GAAG,EAAE,wCAAwC",
-    "sources": [
-        "../templates/photoCageApp/sass/fonts.scss"
-    ],
-    "names": [],
-    "file": "fonts.css"
-}
