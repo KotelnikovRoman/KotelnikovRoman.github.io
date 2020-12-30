@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AACA,4CAA4C",
+    "sources": [
+        "../templates/photo_cage_app/sass/mixins.sass"
+    ],
+    "names": [],
+    "file": "mixins.css"
+}
