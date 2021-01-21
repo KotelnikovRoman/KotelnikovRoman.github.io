@@ -1,4 +1,105 @@
 $accent: #D7B399
 $light: #F9F6F1
-$light-gray: #cbcfd4
+$gray: #cbcfd4
+$light-gray: #f4f4f4
 $dark: #212121
+$dark-gray: #8d8d8d
+$important: #d84033
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Montserrat', sans-serif
+
+.page-light
+    background-color: $light
+
+.wrapper
+    max-width: 1110px
+    margin: 0 auto
+    padding-left: 15px
+    padding-right: 15px
+
+.btn
+    background-color: $accent
+    color: #ffffff
+    font-size: 16px
+    text-transform: uppercase
+    text-decoration: none
+    padding: 18px 28px
+
+// header 
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 126px
+    padding-top: 46px
+
+.nav
+    &__list
+        display: flex
+        list-style: none
+        padding-left: 0
+    &__item
+        margin-right: 52px
+    &__link
+        color: $dark
+        text-decoration: none
+
+.card
+    background-image: url(../img/header/basket.svg)
+    display: block
+    padding-left: 45px
+    width: 30px
+    height: 30px
+    background-repeat: no-repeat
+    background-position: 0 center
+    &-count
+        background-image: url(../img/header/group.png)
+        background-repeat: no-repeat
+        background-position: 0 center
+        color: #ffffff
+        font-size: 12px
+        font-weight: 700
+        margin-top: 10px
+        padding: 1px 25px
+        display: block
+
+// main 
+
+.main
+    display: flex
+    justify-content: space-between
+    &__item
+        flex: 0 0 50%
+
+.sale
+    &__description
+        font-size: 30px
+        letter-spacing: -0.6px
+    &__title
+        font-size: 55px
+        font-weight: 700
+        margin-top: 30px
+        margin-bottom: 60px
+
+.box
+    position: relative
+    &-price
+        position: absolute
+        top: 35px
+        right: 0
+        text-align: right
+        &-old
+            font-size: 24px
+            font-weight: 700
+            text-decoration: line-through
+        &-new
+            font-size: 42px
+            font-weight: 700
+            color: $important
+            margin-top: 17px

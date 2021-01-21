@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page-light {
+  background-color: #F9F6F1;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn {
+  background-color: #D7B399;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 28px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 126px;
+  padding-top: 46px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav__item {
+  margin-right: 52px;
+}
+
+.nav__link {
+  color: #212121;
+  text-decoration: none;
+}
+
+.card {
+  background-image: url(../img/header/basket.svg);
+  display: block;
+  padding-left: 45px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.card-count {
+  background-image: url(../img/header/group.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 1px 25px;
+  display: block;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.sale__description {
+  font-size: 30px;
+  letter-spacing: -0.6px;
+}
+
+.sale__title {
+  font-size: 55px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.box {
+  position: relative;
+}
+
+.box-price {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  text-align: right;
+}
+
+.box-price-old {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.box-price-new {
+  font-size: 42px;
+  font-weight: 700;
+  color: #d84033;
+  margin-top: 17px;
+}
+/*# sourceMappingURL=style.css.map */

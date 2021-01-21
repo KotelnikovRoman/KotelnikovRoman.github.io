@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Loop</title>
 </head>
@@ -12,25 +15,56 @@
 <body>
     <div class="page page-light">
         <div class="wrapper">
-            <header>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav__item">Для мужчин</li>
-                        <li class="nav__item">Дляя женщин</li>
-                        <li class="nav__item">Для детей</li>
+            <header class="header">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Для мужчин</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Для женщин</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Для детей</a>
+                        </li>
                     </ul>
                 </nav>
-                <img src="img/logo.svg" alt="">
-                <ul class="nav">
-                    <li class="nav__item">Оплата</li>
-                    <li class="nav__item">Доставка</li>
+                <img src="img/header/logo.svg" alt="">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Оплата</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Доставка</a>
+                    </li>
                 </ul>
-                <div class="cart"><span>5</span></div>
+                <div class="card"><span class="card-count">5</span></div>
             </header>
+            <div class="main">
+                <div class="main__item sale">
+                    <p class="sale__description">Зимняя распродажа</p>
+                    <h1 class="sale__title">СКИДКИ ДО 90%</h1>
+                    <a href="" class="sale btn">СМОТРЕТЬ МОДЕЛИ</a>
+                </div>
+                <!-- /.sale -->
+                <div class="main__item box">
+                    <div class="box-price">
+                        <p class="box-price-old">9 900 ₽</p>
+                        <p class="box-price-new">1 900 ₽</p>
+                    </div>
+                    <img src="img/shoes.png" alt="" class="box-image">
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.main -->
         </div>
         <!-- /.wrapper -->
     </div>
     <!-- /.page page-light -->
+    <div class="page page-dark">
+        <h1></h1>
+    </div>
+    <!-- /.page page-dark -->
 </body>
 
 </html>
