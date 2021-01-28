@@ -28,6 +28,10 @@ body
     padding-left: 15px
     padding-right: 15px
 
+.title-h2
+    text-align: center
+    font-size: 36px
+
 .btn
     background-color: $accent
     color: #ffffff
@@ -37,6 +41,13 @@ body
     padding: 18px 28px
     &-xs
         padding: 8px 28px
+    &-center
+        display: block
+        text-align: center
+        max-width: 200px
+        margin: 0 auto
+        span
+            margin-right: 15px
 
 // header 
 .header
@@ -141,3 +152,32 @@ body
     &__description
         margin-bottom: 30px
         font-size: 16px
+
+.product
+    display: flex
+    justify-content: space-between
+    text-align: center
+    margin-top: 30px
+    margin-bottom: 30px
+    &__item
+        flex: 0 0 24%
+        position: relative
+        &::before,
+        &::after
+            content: ""
+            display: block
+            width: 100%
+            height: 25px
+            background-repeat: no-repeat
+            background-position: 0% 0%, 100% 0%
+        &::before
+            background-image: url('../img/border_left_top.png'), url('../img/border_right_top.png')
+        &::after
+            position: absolute
+            top: 100%
+            background-image: url('../img/border_left_bottom.png'), url('../img/border_right_bottom.png')
+    &__title
+        font-weight: 600
+    &__price
+        font-size: 700
+        color: $accent
