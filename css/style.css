@@ -2,4 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.header__title, .header__subtitle {
+  text-align: center;
+}
+
+.aside {
+  width: 30%;
+}
+
+.article {
+  width: 70%;
+}
 /*# sourceMappingURL=style.css.map */
