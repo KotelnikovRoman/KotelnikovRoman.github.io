@@ -40,7 +40,7 @@ body
     text-decoration: none
     padding: 18px 28px
     &-xs
-        padding: 8px 28px
+        padding: 5px 28px
     &-center
         display: block
         text-align: center
@@ -124,23 +124,26 @@ body
 
 .notice
     text-align: center
-    padding: 50px 0
+    padding: 64px 0 54px
     color: #ffffff
     &__title
         font-size: 30px
         text-transform: uppercase
+        font-weight: 400
         span
             font-weight: 700
+    &__description
+        font-size: 21px
 
 .collection
     display: flex
     justify-content: space-between
     &__item
         flex: 0 0 50%
-        padding: 50px 0
+        padding: 43px 0 63px
         background-size: 190px 171px
         background-repeat: no-repeat
-        background-position: calc(100% - 50px) bottom
+        background-position: calc(100% - 37px) bottom
     &__man
         background-image: url('../img/man.png')
     &__woman
@@ -150,7 +153,7 @@ body
         font-weight: 300
         text-transform: uppercase
     &__description
-        margin-bottom: 30px
+        margin-bottom: 43px
         font-size: 16px
 
 .product
@@ -181,3 +184,25 @@ body
     &__price
         font-size: 700
         color: $accent
+
+.footer
+    display: flex
+    justify-content: space-between
+    padding: 30px 0
+    &__logo
+        flex: 0 0 40%
+    &__nav
+        flex: 0 0 60%
+        display: flex
+        justify-content: space-between
+        color: #ffffff
+    &__list
+        list-syle-type: none
+        padding-left: 0
+    &__title
+        font-size: 10px
+        font-weight: 700
+    &__link
+        color: $gray
+        text-decoration: none
+        font-size: 14px
