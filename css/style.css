@@ -1,23 +1,5 @@
-	/*header*/
-	.start span {
-		font-weight: bold;
-		text-transform: uppercase;
-	}
-		/*end header*/
-	
-	.effect-bubba_img {
-		height: 225px;
-	}
-	
-	.contact_icon {
-		height: 30px;
-	}
-
-	.donwload_zip {
-		position: fixed;
-		bottom: 0;
-	}
-
-	.donwload_zip a img {
-		width: 50px;
-	}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,0 @@
-#file for poiskovikov
-#obrabativayuzhiy sitemap
-
-Host: https://kotelnikovroman.github.io
-
-#для всех роботов
-User-agent: *
-Allow: /templates
-sitemap: https://kotelnikovroman.github.io/sitemap.xml
