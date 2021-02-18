@@ -8,15 +8,36 @@
   margin: 0 auto;
 }
 
-.header__title, .header__subtitle {
+.container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+  padding-top: 20px;
+}
+
+.header__logo {
+  width: 10%;
+}
+
+.header__img {
+  width: 100%;
+}
+
+.header__titled {
+  width: 90%;
   text-align: center;
 }
 
 .aside {
   width: 30%;
+  height: 500px;
 }
 
 .article {
   width: 70%;
+  height: 500px;
 }
 /*# sourceMappingURL=style.css.map */
