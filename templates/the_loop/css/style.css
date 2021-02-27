@@ -9,9 +9,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .page {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 129px;
 }
 
 .page-light {
@@ -30,8 +34,10 @@ body {
 }
 
 .title-h2 {
+  margin-top: 54px;
   text-align: center;
   font-size: 36px;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -50,7 +56,7 @@ body {
 .btn-center {
   display: block;
   text-align: center;
-  max-width: 200px;
+  max-width: 217px;
   margin: 0 auto;
 }
 
@@ -72,7 +78,13 @@ body {
   padding-top: 46px;
 }
 
+.header__logo {
+  margin-right: 0px;
+}
+
 .nav__list {
+  position: relative;
+  left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +93,7 @@ body {
 }
 
 .nav__item {
-  margin-right: 52px;
+  margin-right: 35px;
 }
 
 .nav__link {
@@ -129,6 +141,7 @@ body {
 .sale__description {
   font-size: 30px;
   letter-spacing: -0.6px;
+  margin-top: 34px;
 }
 
 .sale__title {
@@ -164,7 +177,7 @@ body {
 
 .notice {
   text-align: center;
-  padding: 64px 0 54px;
+  padding: 64px 0 73px;
   color: #ffffff;
 }
 
@@ -189,12 +202,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 18px;
 }
 
 .collection__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+  margin-left: 22px;
   padding: 43px 0 63px;
   background-size: 190px 171px;
   background-repeat: no-repeat;
@@ -210,6 +225,7 @@ body {
 }
 
 .collection__title {
+  margin-bottom: 19px;
   font-size: 24px;
   font-weight: 300;
   text-transform: uppercase;
@@ -228,8 +244,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 100px;
+  margin-bottom: 124px;
 }
 
 .product__item {
@@ -260,11 +276,16 @@ body {
 
 .product__title {
   font-weight: 600;
+  margin-top: 23px;
+  margin-bottom: 0;
 }
 
 .product__price {
-  font-size: 700;
   color: #D7B399;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .footer {
@@ -274,7 +295,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 0;
+  margin-top: 23px;
+  padding: 72px 0;
 }
 
 .footer__logo {
@@ -285,8 +307,8 @@ body {
 
 .footer__nav {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
+      -ms-flex: 0 0 64%;
+          flex: 0 0 64%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,8 +324,14 @@ body {
 }
 
 .footer__title {
-  font-size: 10px;
+  margin-bottom: 12px;
+  font-size: 12px;
   font-weight: 700;
+}
+
+.footer__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .footer__link {
