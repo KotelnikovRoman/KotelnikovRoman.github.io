@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/vars_style.sass"
-    ],
-    "names": [],
-    "file": "vars_style.css"
-}
