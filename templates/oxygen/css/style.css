@@ -58,9 +58,27 @@ ul {
 }
 
 .oxygen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 500px;
   background-image: url("../img/Header-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.oxygen__title {
+  font-size: 100px;
+  color: #fff;
+}
+.oxygen__subtitle {
+  font-size: 18px;
+  color: #FCBB08;
+}
+.oxygen__img {
+  position: relative;
+  bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
