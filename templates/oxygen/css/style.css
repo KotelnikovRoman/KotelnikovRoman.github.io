@@ -20,7 +20,6 @@ ul {
 .title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .container {
@@ -71,14 +70,16 @@ ul {
 .oxygen__title {
   font-size: 100px;
   color: #fff;
+  text-transform: uppercase;
 }
 .oxygen__subtitle {
   font-size: 18px;
   color: #FCBB08;
+  text-transform: uppercase;
 }
 .oxygen__img {
   position: relative;
-  bottom: 10px;
+  top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
