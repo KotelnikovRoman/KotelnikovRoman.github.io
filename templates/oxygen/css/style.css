@@ -7,6 +7,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+  font-size: 14px;
 }
 
 a {
@@ -20,6 +21,8 @@ ul {
 .title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 60px;
+  color: #242121;
 }
 
 .container {
@@ -31,6 +34,33 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 100%;
+}
+.flex--column {
+  flex-direction: column;
+  justify-content: center;
+}
+.flex__30 {
+  display: flex;
+  align-self: start;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  min-height: 100%;
+}
+.flex__70 {
+  width: 70%;
+}
+
+.grey {
+  background: #F6F8FA;
+}
+
+.hr {
+  width: 50px;
+  height: 2px;
+  align-self: center;
+  background: #FCBB08;
 }
 
 .nav {
@@ -57,15 +87,12 @@ ul {
 }
 
 .oxygen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 100%;
   height: 500px;
+  min-height: 500px;
   background-image: url("../img/Header-bg.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .oxygen__title {
   font-size: 100px;
@@ -80,6 +107,20 @@ ul {
 .oxygen__img {
   position: relative;
   top: 100px;
+}
+
+.about {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.about__title {
+  align-self: flex-start;
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.about__text {
+  padding-bottom: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
