@@ -25,18 +25,22 @@ p {
 
 progress {
   -webkit-appearance: none;
-  width: 100%;
+  width: 90%;
   height: 2px;
 }
 progress::-webkit-progress-value {
   width: 100%;
   height: 2px;
+  background: #1d1d1d;
 }
 progress::-webkit-progress-bar {
   width: 100%;
   height: 2px;
-  color: #f0f0f0;
-  background: #1d1d1d;
+}
+progress::-moz-progress-bar {
+  width: 100%;
+  height: 2px;
+  background: #000;
 }
 
 .title {
