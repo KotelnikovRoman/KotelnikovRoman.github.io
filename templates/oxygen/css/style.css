@@ -163,6 +163,13 @@ progress::-moz-progress-bar {
 }
 .form__label {
   width: 90%;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.services__box {
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */
