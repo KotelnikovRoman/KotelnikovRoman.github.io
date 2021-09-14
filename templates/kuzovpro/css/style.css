@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.header,
+.main,
+.footer {
+  width: 100%;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.container__flex {
+  display: flex;
+}
+
+.header {
+  height: 200px;
+  box-shadow: 1px 1px 10px grey;
+}
+
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  padding: 10px 5px;
+}
+
+.phone__number {
+  padding-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
