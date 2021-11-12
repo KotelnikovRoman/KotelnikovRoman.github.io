@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  background: #f6f6f6;
+}
+
+ul {
+  list-style: none;
+}
+
+.header,
+.main,
+.footer {
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.container__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #fbd819;
+  box-shadow: 1px 1px 10px grey;
+}
+
+.logo {
+  flex-basis: 20%;
+  padding: 10px 15px;
+}
+.logo__title {
+  color: #fff;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+}
+
+.phone {
+  flex-basis: 20%;
+}
+.phone__number {
+  padding-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
