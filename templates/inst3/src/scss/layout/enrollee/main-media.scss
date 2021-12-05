@@ -1,0 +1,161 @@
+@media screen and (max-width: 1000px) {
+	.enrollee {
+		background-color: var(--white);
+		&__start-arrow {
+			img {
+				margin-top: -2em;
+				width: 4em;
+				height: 14.5em;
+			}
+		}
+
+
+
+		&__title-text {
+			margin-top: -0.5em;
+		}
+
+		&__title-admission-rules {
+			margin-top: 0.4em;
+		}
+
+		&__admission-rules {
+			ul {
+				margin-top: -6em;
+				li {
+					font-size: 3.25em;
+					line-height: 4.25rem;
+					margin-top: 1.7em;
+					img {
+						margin-right: 1em;
+						width: 2.2em;
+						height: 2em;
+					}
+				}
+			}
+		}
+
+		&__text-after-admission-rules {
+			margin-top: 1em;
+		}
+
+		&__link-after-admission-rules {
+			margin-top: -0.5em;
+			a {
+				align-self: end;
+				width: 23em;
+			}
+		}
+
+		&__selection-committee-title {
+
+		}
+
+		&__selection-committee-text {
+
+		}
+
+		&__selection-committee-link {
+			a {
+				width: 24.5em;
+			}
+		}
+
+		&__selection-committee-image {
+			img {
+				width: 80em;
+				height: 70em;
+			}
+		}
+
+		&__feedback {
+			height: 55em;
+		}
+
+		&__educational-programs-title {
+			display: none;
+			&-mobile {
+				display: block;
+			}
+		}
+
+		&__image-educational-programs {
+			margin-top: 0em;
+			img {
+				width: 80em;
+				height: 175em;
+			}
+			.adaptive {
+				display: block;
+			}
+			.desc {
+				display: none;
+			}
+		}
+
+		&__educational-programs-link-1 {
+			a {
+				background-color: var(--white);
+				width: 50rem;
+				height: 10rem;
+				margin-left: 0;
+				margin-top: 0;
+			}
+		}
+
+		&__educational-programs-link-2 {
+			a {
+				background-color: var(--white);
+				width: 50rem;
+				height: 10rem;
+				margin-left: 0;
+				margin-top: 0;
+			}
+		}
+
+		&__educational-programs-link-3 {
+			a {
+				background-color: var(--white);
+				width: 50rem;
+				height: 10rem;
+				margin-left: 0;
+				margin-top: 0;
+			}
+		}
+
+		&__applied-math-title {
+
+		}
+
+		&__applied-math-text {
+
+		}
+
+		&__applied-math-description-math {
+
+		}
+
+		&__title-biotechnology {
+
+		}
+
+		&__text-biotechnology {
+
+		}
+
+		&__biotechnology-description-1 {
+			height: 30em;
+		}
+
+		&__biotechnology-description-2 {
+			height: 30em;
+		}
+
+		&__biotechnology-description-3 {
+			height: 30em;
+		}
+
+
+	}
+
+}

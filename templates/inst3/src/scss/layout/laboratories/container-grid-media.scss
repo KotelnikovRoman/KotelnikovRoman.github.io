@@ -1,0 +1,368 @@
+@media screen and (max-width: 1000px) {
+	.container-grid {
+		.laboratories {
+
+			&__title-bioinformatics {
+				grid-column: 3 / 21;
+				grid-row: 42 / 49;
+			}
+			&__title-cell-biology {
+				grid-column: 3 / 21;
+				grid-row: 104 / 111;
+			}
+			&__title-biophysics {
+				grid-column: 3 / 21;
+				grid-row: 217 / 224;
+			}
+
+			&__arrow-1 {
+				display: none;
+				&-adaptive {
+					z-index: 5;
+					display: block;
+					grid-column: 10 / 12;
+					grid-row: 31 / 34;
+					justify-self: center;
+					img {
+						width: 3.25em;
+						height: 14em;
+					}
+				}
+			}
+
+
+
+
+
+			&__center-lines__adaptive {
+				display: block !important;
+				grid-column: 1 / 21;
+				grid-row: 143 / 189;
+				img {
+					width: 100em;
+					height: 227.25em;
+				}
+			}
+
+			&__center-lines {
+				display: none;
+				&-1 {
+					display: none;
+				}
+				&-2 {
+					display: none;
+				}
+				&-3 {
+					display: none;
+				}
+			}
+
+			&__orange-lines {
+				display: none;
+				&__left-1 {
+					display: none;
+				}
+				&__left-2 {
+					display: none;
+				}
+				&__left-3 {
+					display: none;
+				}
+				&__right-1 {
+					display: none;
+				}
+				&__right-2 {
+					display: none;
+				}
+				&__right-3 {
+					display: none;
+				}
+			}
+
+
+
+
+
+
+
+
+			&__arrow-2 {
+				display: none;
+			}
+
+			&__search {
+				align-self: start;
+				justify-self: end;
+				z-index: 5;
+				grid-column: 3 / 19;
+				grid-row: 35 / 39;
+			}
+
+
+			&__bioinformatics-1 {
+				grid-column: 3 / 18;
+				grid-row: 51 / 66;
+
+			}
+			&__link-with-bioinformatics-1 {
+				grid-column: 4 / 16;
+				grid-row: 63 / 65;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__bioinformatics-2 {
+				grid-column: 3 / 18;
+				grid-row: 68 / 83;
+			}
+			&__link-with-bioinformatics-2 {
+				grid-column: 4 / 16;
+				grid-row: 80 / 82;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__bioinformatics-3 {
+				grid-column: 3 / 18;
+				grid-row: 85 / 100;
+			}
+			&__link-with-bioinformatics-3 {
+				grid-column: 4 / 16;
+				grid-row: 97 / 99;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+
+
+
+			&__cell-biology-1 {
+				margin-top: 1.4em;
+				grid-column: 3 / 18;
+				grid-row: 113 / 128;
+			}
+			&__link-with-cell-biology-1 {
+				grid-column: 4 / 16;
+				grid-row: 125 / 127;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__cell-biology-2 {
+				margin-top: 1.4em;
+				grid-column: 3 / 18;
+				grid-row: 130 / 145;
+			}
+			&__link-with-cell-biology-2 {
+				grid-column: 4 / 16;
+				grid-row: 142 / 144;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__cell-biology-3 {
+				margin-top: -2.7em;
+				align-self:center;
+				grid-column: 3 / 18;
+				grid-row: 147 / 162;
+			}
+			&__link-with-cell-biology-3 {
+				grid-column: 4 / 16;
+				grid-row: 159 / 161;
+				margin-left: 2.8em;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__cell-biology-4 {
+				margin-top: -2.7em;
+				align-self:center;
+				grid-column: 3 / 18;
+				grid-row: 164 / 179;
+			}
+			&__link-with-cell-biology-4 {
+				grid-column: 4 / 16;
+				grid-row: 176 / 178;
+				margin-left: 2.8em;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__cell-biology-5 {
+				grid-column: 3 / 18;
+				grid-row: 181 / 196;
+			}
+			&__link-with-cell-biology-5 {
+				grid-column: 4 / 16;
+				grid-row: 193 / 195;
+				margin-left: 2.8em;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__cell-biology-6 {
+				grid-column: 3 / 18;
+				grid-row: 198 / 213;
+			}
+			&__link-with-cell-biology-6 {
+				grid-column: 4 / 16;
+				grid-row: 210 / 212;
+				margin-left: 2.8em;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+
+
+
+
+			&__biophysics-1 {
+				align-self:center;
+				margin-top: -2.7em;
+				// z-index: 6;
+				grid-column: 3 / 18;
+				grid-row: 226 / 241;
+			}
+			&__link-with-biophysics-1 {
+				// z-index: 7;
+				grid-column: 4 / 16;
+				grid-row: 238 / 240;
+				margin-left: 2.8em;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__biophysics-2 {
+				align-self:center;
+				margin-top: -2.7em;
+				// z-index: 6;
+				grid-column: 3 / 18;
+				grid-row: 243 / 258;
+			}
+			&__link-with-biophysics-2 {
+				// z-index: 7;
+				grid-column: 4 / 16;
+				grid-row: 255 / 257;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__biophysics-3 {
+				// z-index: 6;
+				grid-column: 3 / 18;
+				grid-row: 260 / 275;
+			}
+			&__link-with-biophysics-3 {
+				// z-index: 7;
+				grid-column: 4 / 16;
+				grid-row: 272 / 274;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__biophysics-4 {
+				// z-index: 6;
+				grid-column: 3 / 18;
+				grid-row: 277 / 292;
+			}
+			&__link-with-biophysics-4 {
+				// z-index: 7;
+				grid-column: 4 / 16;
+				grid-row: 289 / 291;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__biophysics-5 {
+				margin-top: 1.4em;
+				// z-index: 6;
+				grid-column: 3 / 18;
+				grid-row: 294 / 309;
+			}
+			&__link-with-biophysics-5 {
+				// z-index: 7;
+				grid-column: 4 / 16;
+				grid-row: 306 / 308;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+			&__biophysics-6 {
+				margin-top: 1.4em;
+				// z-index: 6;
+				grid-column: 3 / 18;
+				grid-row: 311 / 326;
+			}
+			&__link-with-biophysics-6 {
+				// z-index: 7;
+				grid-column: 4 / 16;
+				grid-row: 323 / 325;
+				margin-left: 0em;
+				align-self: center;
+				a {
+					width: 18.5em;
+				}
+			}
+
+
+
+
+			&__feedback {
+				display: none;
+			}
+
+
+
+
+
+
+
+			&__footer {
+				grid-column: 1 / 21;
+				grid-row: 330 / 347;
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.title-point-page {
+	position: relative;
+	.number {
+		position: absolute;
+		left: -1.25em;
+		top: -0.8em;
+		font-size: 1.2rem;
+		line-height: 1.4375em;
+		color: var(--color_main_title);
+		font-family: var(--ff_regular);	
+		@media screen and (max-width: 1000px) {
+			left: -1.1em;
+			top: -1.25em;
+			font-size: 3.25em;
+			line-height: 4.25rem;	
+		}
+	}
+	p {
+		font-family: var(--ff_bold);
+		color: var(--main-app-color);
+		font-size: 3.6136em;
+		line-height: 4.5865rem;
+		@media screen and (max-width: 1000px) {
+			line-height: 11.5rem;
+			font-size: 9em;
+		}
+	}
+}

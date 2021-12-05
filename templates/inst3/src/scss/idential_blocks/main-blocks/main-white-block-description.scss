@@ -1,0 +1,43 @@
+.main-white-block-description {
+	background: var(--white);
+	border: 2px solid var(--main-app-color);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+	.title {
+		font-size: 1.6678em;
+		line-height: 2.1543rem;
+		margin-bottom: 1.25em;
+		font-family: var(--ff_bold);
+		color:var(--main-app-color);
+		max-width: 16em;
+	}
+	ul {
+		li {
+			font-family: var(--ff_regular);
+			color:var(--main-app-color);
+			font-size: 1.2509em;
+			line-height: 1.5983rem;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.main-white-block-description {
+		padding: 6em;
+		.title {
+			font-size: 3.5em;
+			line-height: 4.5rem;
+			margin-bottom: 1.5em;
+			max-width: 100em;
+		}
+		ul {
+			li {
+				font-size: 3.25em;
+				line-height: 4.25rem;				
+			}
+		}
+	}
+}

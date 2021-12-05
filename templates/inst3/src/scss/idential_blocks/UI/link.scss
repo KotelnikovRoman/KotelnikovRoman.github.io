@@ -1,0 +1,19 @@
+.main-link-app {
+	a {
+		align-self: end;
+		height: 3.75em;
+		border: 2px solid var(--main-app-color);
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 1.3em;
+		color:var(--main-app-color);
+		font-size: .925em;
+		@media screen and (max-width: 1000px) {
+			font-size: 3.25em;
+			line-height: 4.25rem;
+			height: 3em;
+		}
+	}
+}

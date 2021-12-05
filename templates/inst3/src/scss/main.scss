@@ -1,0 +1,59 @@
+@import 'default/reset';
+@import 'default/fonts';
+@import 'default/const';
+@import 'default/buttons';
+@import 'default/text';
+@import 'default/container-grid';
+@import 'idential_blocks/main-blocks/main-bg-white';
+@import 'idential_blocks/header/index-header';
+@import 'idential_blocks/footer/index-footer';
+@import 'idential_blocks/UI/link';
+@import 'idential_blocks/main-blocks/start-text-page';
+@import 'idential_blocks/main-blocks/title-point-page';
+@import 'idential_blocks/main-blocks/main-feedback-block';
+@import 'idential_blocks/main-blocks/main-white-block-description';
+@import 'idential_blocks/main-blocks/main-text-page';
+@import 'idential_blocks/main-blocks/main-text-page-second';
+@import 'idential_blocks/main-blocks/main-block-with-bg-block';
+@import 'idential_blocks/main-blocks/main-search';
+@import 'layout/index/index';
+@import 'layout/enrollee/main';
+@import 'layout/laboratories/main';
+
+* {
+	font-family: var(--ff_regular);
+}
+
+html, body {
+	font-size: 1vw;
+}
+body {
+	overflow-x: hidden;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+.main-animation_ball {
+	grid-column: 1 / 11;
+	grid-row: 1 / 30;
+	position: absolute;
+	right: 0;
+	top: -5em;
+	height: 80em;
+	width: 80em;
+	z-index: 2;
+	pointer-events: none;
+	@media screen and (max-width: 1000px) {
+		grid-column: 1 / 21;
+		grid-row: 1 / 22;
+		right: 0;
+		top: -15em;
+		width: 80em;
+		height: 150em;
+	}
+	canvas {
+		position: absolute;
+		background: transparent;
+		opacity: 1;
+	}
+}

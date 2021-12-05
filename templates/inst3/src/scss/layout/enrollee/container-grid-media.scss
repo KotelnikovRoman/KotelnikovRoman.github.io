@@ -1,0 +1,212 @@
+@media screen and (max-width: 1000px) {
+	.container-grid {
+		.enrollee {
+			&__start-arrow {
+				grid-column: 3 / 19;
+				grid-row: 31 / 34;
+			}
+
+			// .main-animation_ball {
+			// 	top: 10em;
+			// 	left: -50%;
+			// 	height: 120em;
+			// 	width: 100em;
+			// 	canvas {
+
+			// 	}
+			// }
+
+			&__center-lines__adaptive {
+				display: block;
+				z-index: 1;
+				grid-column: 1 / 21;
+				grid-row: 143 / 189;
+				justify-self: start;
+				margin-top: 1em;
+				// margin-left: -10em;
+				img {
+					width: 100em;
+					height: 227.25em;
+				}
+			}
+
+			&__center-lines {
+				display: none;
+			}
+
+			&__orange-lines {
+				&__left-1 {
+					display: none;
+				}
+				&__right-1 {
+					display: none;
+				}
+				&__left-2 {
+					display: none;
+				}
+				&__right-2 {
+					display: none;
+				}
+				&__right-3 {
+					display: none;
+				}
+				&__right_adaptive-1 {
+					display: block;
+					grid-column: 15 / 21;
+					grid-row: 104 / 115;
+					align-self: end;
+					justify-self:end;
+					img {
+						width: 31em;
+						height: 51em;
+					}
+				}
+				&__right_adaptive-2 {
+					display: block;
+					grid-column: 15 / 21;
+					grid-row: 237 / 248;
+					align-self: center;
+					justify-self:end;
+					img {
+						width: 31em;
+						height: 51em;
+					}
+				}
+			}
+
+
+
+			&__title-text {
+				grid-column: 3 / 19;
+				grid-row: 35 / 43;
+			}
+
+			&__title-admission-rules {
+				grid-column: 3 / 19;
+				grid-row: 45 / 50;
+				align-self: start;
+			}
+
+			&__admission-rules {
+				align-self: start;
+				grid-column: 3 / 19;
+				grid-row: 51 / 74;			
+			}
+
+			&__text-after-admission-rules {
+				grid-column: 3 / 19;
+				grid-row: 76 / 87;
+				align-self: start;
+			}
+
+			&__link-after-admission-rules {
+				grid-column: 3 / 18;
+				grid-row: 88 / 90;
+			}
+
+			&__selection-committee-title {
+				grid-column: 3 / 19;
+				grid-row: 94 / 99;
+			}
+
+			&__selection-committee-text {
+				grid-column: 3 / 19;
+				grid-row: 115 / 126;
+			}
+
+			&__selection-committee-link {
+				grid-column: 3 / 19;
+				grid-row: 127 / 129;
+				align-self:center;
+			}
+
+			&__selection-committee-image {
+				justify-self: center;
+				grid-column: 3 / 19;
+				grid-row: 100 / 114;
+			}
+
+			&__feedback {
+				z-index: 5;
+				grid-column: 3 / 19;
+				grid-row: 132 / 143;			
+			}
+
+			&__educational-programs-title-mobile {
+				align-self:start;
+				grid-column: 3 / 19;
+				grid-row: 146 / 151;
+				z-index: 5;
+			}
+
+			&__image-educational-programs {
+				grid-column: 3 / 19;
+				grid-row: 152 / 187;
+			}
+
+			&__educational-programs-link-1 {
+				grid-column: 3 / 13;
+				grid-row: 164 / 166;
+			}
+
+			&__educational-programs-link-2 {
+				grid-column: 3 / 13;
+				grid-row: 176 / 178;
+			}
+
+			&__educational-programs-link-3 {
+				grid-column: 3 / 13;
+				grid-row: 188 / 190;
+			}
+
+			&__applied-math-title {
+				grid-column: 3 / 19;
+				grid-row: 193 / 200;
+			}
+
+			&__applied-math-text {
+				grid-column: 3 / 19;
+				grid-row: 201 / 205;
+			}
+
+			&__applied-math-description-math {
+				grid-column: 3 / 19;
+				grid-row: 205 / 212;
+			}
+
+			&__title-biotechnology {
+				grid-column: 3 / 19;
+				grid-row: 216 / 218;
+				align-self: end;
+			}
+
+			&__text-biotechnology {
+				grid-column: 3 / 19;
+				grid-row: 220 / 225;
+				align-self: start;
+			}
+
+			&__biotechnology-description-1 {
+				grid-column: 3 / 19;
+				grid-row: 225 / 231;
+			}
+
+			&__biotechnology-description-2 {
+				grid-column: 3 / 19;
+				grid-row: 232 / 238;
+			}
+
+			&__biotechnology-description-3 {
+				grid-column: 3 / 19;
+				grid-row: 239 / 245;
+			}
+
+			&__footer {
+				grid-column: 1 / 21;
+				grid-row: 248 / 265;
+			}
+
+
+		}
+	}
+}

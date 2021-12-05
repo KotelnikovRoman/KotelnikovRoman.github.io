@@ -1,0 +1,14 @@
+.main-bg-white {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 110em;
+	width: 100vw;
+	z-index: 3;
+	grid-column: 1 / 11;
+	grid-row: 10 / 11;
+	background: linear-gradient(180deg, #FFFFFF 65.54%, #F1F1F5 100%);
+	@media screen and (max-width: 1000px) {
+		display: none;
+	}
+}

@@ -1,0 +1,60 @@
+.main-block-with-bg-block {
+	position: relative;
+	.bg-block {
+		background-color: var(--white);
+		border:2px solid var(--main-app-color);
+		z-index: -1;
+		top: 2.8em;
+		left: 2.5em;
+		position: absolute;
+		width: 34.7464em;
+		height: 29.1869em;
+		transition:.5s;
+		@media screen and (max-width: 1000px) {
+			width: 74em;
+			height: 74em;
+			top: 5em;
+			left: 5em;
+		}
+	}
+	.main-block {
+		background-color: var(--white);
+		border:2px solid var(--main-app-color);
+		z-index: 6;
+		width: 34.7464em;
+		height: 29.1869em;
+		box-sizing: border-box;
+		padding: 3.47em 0.34em 2.78em 2.78em;
+		@media screen and (max-width: 1000px) {
+			width: 75em;
+			height: 75em;
+			padding: 4.5em 4em 2.78em 4.5em;
+		}
+		.title {
+			font-family: var(--ff_bold);
+			color: var(--main-app-color);
+			font-size: 1.6678em;
+			line-height: 2.1543rem;
+			margin-bottom: 1.15em;
+			@media screen and (max-width: 1000px) {
+				font-size: 3.5em;
+				line-height: 4.5rem;
+			}
+		}
+		.text {
+			font-family: var(--ff_regular);
+			color: var(--main-app-color);
+			font-size: 1.2509em;
+			line-height: 1.5983rem;
+			@media screen and (max-width: 1000px) {
+				font-size: 3.25em;
+				line-height: 4.25rem;
+			}
+		}
+	}
+	&:hover {
+		.bg-block {
+			background-color: var(--news-point-hover);
+		}
+	}
+}

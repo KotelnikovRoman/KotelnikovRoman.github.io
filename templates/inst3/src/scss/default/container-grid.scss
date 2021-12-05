@@ -1,0 +1,21 @@
+.container-grid {
+
+	display: grid;
+	grid-template-columns: repeat(10, 6.25em);
+	column-gap:4.1667em;
+	grid-auto-rows: 4.1667em;
+	width: 100vw;
+
+	position: relative;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+	.container-grid {
+		column-gap:0;
+		grid-template-columns: repeat(20, 5em);
+		grid-auto-rows: 5em;
+	}
+}

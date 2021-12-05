@@ -1,0 +1,13 @@
+.start-text-page {
+	p {
+		text-align: center;
+		font-family: var(--ff_regular);
+		color: var(--main-app-color);
+		font-size: 2.0153em;
+		line-height: 2.5712rem;
+		@media screen and (max-width: 1000px) {
+			font-size: 3.25em;
+			line-height: 4.25rem;
+		}
+	}
+}

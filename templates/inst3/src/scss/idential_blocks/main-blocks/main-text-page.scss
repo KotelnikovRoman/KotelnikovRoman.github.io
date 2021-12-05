@@ -1,0 +1,12 @@
+.main-text-page {
+	p {
+		font-family: var(--ff_regulat);
+		color: var(--main-app-color);
+		font-size: 1.0775em;
+		line-height: 1.5983rem;
+		@media screen and (max-width: 1000px) {
+			font-size: 3.25em;
+			line-height: 4.25rem;
+		}
+	}
+}

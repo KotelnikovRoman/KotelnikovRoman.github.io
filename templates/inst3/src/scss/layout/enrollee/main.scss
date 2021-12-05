@@ -1,0 +1,157 @@
+@import 'container-grid';
+@import 'container-grid-media';
+
+
+.enrollee {
+	background-color: var(--bgc-index);
+	&__start-arrow {
+		margin-top: 1.5em;
+		img {
+			width: 3em;
+			height: 9.5em;
+		}
+	}
+
+
+	&__title-text {
+		margin-top: 0.75em;
+	}
+
+	&__title-admission-rules {
+		margin-top: 0.4em;
+	}
+
+	&__admission-rules {
+		ul {
+			margin-top: -2em;
+			li {
+				display: flex;
+				font-family: var(--ff_regular);
+				color: var(--main-app-color);
+				font-size: 1.275em;
+				line-height: 1.2em;
+				margin-top: 1.75em;
+				img {
+					margin-right: 2.3em;
+				}
+			}
+		}
+	}
+
+	&__text-after-admission-rules {
+		margin-top: 1em;
+	}
+
+	&__link-after-admission-rules {
+		margin-top: -2em;
+		a {
+			align-self: end;
+			width: 22.5em;
+		}
+	}
+
+	&__selection-committee-title {
+
+	}
+
+	&__selection-committee-text {
+
+	}
+
+	&__selection-committee-link {
+		a {
+			width: 26em;
+		}
+	}
+
+	&__selection-committee-image {
+		img {
+			width: 47.95em;
+			height: 41.6956em;
+		}
+	}
+
+	&__feedback {
+		height: 14.5em;
+	}
+
+	&__educational-programs-title {
+		margin-top: -1em;
+		&-mobile {
+			display: none;
+		}
+	}
+
+	&__image-educational-programs {
+		margin-top: 1.2em;
+		img {
+			width: 79.3607em;
+			height: 62.6129em;
+		}
+		.adaptive {
+			display: none;
+		}
+		.desc {
+			display: block;
+		}
+	}
+
+	&__educational-programs-link-1 {
+		a {
+			width: 18em;
+			margin-left: 2.1em;
+			margin-top: 0.5em;
+		}
+	}
+
+	&__educational-programs-link-2 {
+		a {
+			width: 18em;
+			margin-left: 2.1em;
+			margin-top: 0.5em;
+		}
+	}
+
+	&__educational-programs-link-3 {
+		a {
+			width: 18em;
+			margin-left: 2.1em;
+			margin-top: 0.5em;
+		}
+	}
+
+	&__applied-math-title {
+
+	}
+
+	&__applied-math-text {
+
+	}
+
+	&__applied-math-description-math {
+
+	}
+
+	&__title-biotechnology {
+
+	}
+
+	&__text-biotechnology {
+
+	}
+
+	&__biotechnology-description-1 {
+		height: 14.5em;
+	}
+
+	&__biotechnology-description-2 {
+		height: 14.5em;
+	}
+
+	&__biotechnology-description-3 {
+		height: 14.5em;
+	}
+}
+
+
+@import 'main-media';

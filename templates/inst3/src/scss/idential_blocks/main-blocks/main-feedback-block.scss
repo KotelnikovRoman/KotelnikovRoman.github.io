@@ -1,0 +1,77 @@
+.main-feedback-block {
+	width: 79.25em;
+	height: 13.8985em;
+	padding: 3.47em 10.42em;
+	background: var(--white);
+	border: 2px solid var(--color_main_title);
+	box-sizing: border-box;
+	text-align: center;
+	.feedback__form {
+		label {
+			display: block;
+			font-size: 2.015em;
+			line-height: 2.57rem;
+			margin-bottom: .39em;
+			font-family: var(--ff_regular);
+			color: var(--color_main_title);
+		}
+		input {
+			width: 28em;
+			height: 3.9em;
+			font-size: 0.9em;
+			line-height: 1.18rem;
+			margin-right: 7em;
+			padding: 0 4em;
+			box-sizing:border-box;
+			color: var(--color_main_title);
+			font-family: var(--ff_regular);
+			border: 2px solid var(--color_main_title);
+			&::placeholder {
+				color: var(--color_main_title);
+			}
+		}
+		button {
+			width: 16em;
+			height: 3.9em;
+			font-size: 0.9em;
+			line-height: 1.18rem;
+			background-color: transparent;
+			color: var(--color_main_title);
+			font-family: var(--ff_regular);
+			border: 2px solid var(--color_main_title);
+		}
+	}
+}
+
+
+@media screen and (max-width: 1000px) {
+	.main-feedback-block {
+		width: 80em;
+		height: 55em;
+		padding: 10em 5em;
+		.feedback__form {
+			label {
+				font-size: 3.5em;
+				line-height: 4.5rem;
+				margin-bottom: 1.6em;
+			}
+			input {
+				width: 69.75rem;
+				height: 10rem;
+				font-size: 3.25rem;
+				line-height: 4.25rem;
+				margin-right: 0;
+				padding: 0 1em;
+				margin-bottom: .8em;
+				text-align: center;
+			}
+			button {
+				width: 69.75rem;
+				height: 10rem;
+				font-size: 3.25em;
+				line-height: 4.25rem;
+			}
+		}
+	}
+}
+
