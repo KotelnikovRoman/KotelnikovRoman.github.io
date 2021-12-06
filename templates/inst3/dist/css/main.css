@@ -172,6 +172,11 @@ button {
   grid-row: 1/10;
 }
 
+.profile {
+  width: 50%;
+  background: #000;
+}
+
 .title-header-main {
   margin-top: -1em;
   z-index: 5;
@@ -184,6 +189,9 @@ button {
   color: var(--white);
   font-size: 6.4628em;
   line-height: 8.2696rem;
+}
+.title-header-main .profile-name {
+  font-size: 2em;
 }
 
 .image-header-main {
